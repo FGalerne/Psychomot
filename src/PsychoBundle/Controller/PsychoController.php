@@ -121,4 +121,22 @@ class PsychoController extends Controller
             ->getForm()
         ;
     }
+    public function mailAction()
+    {
+        $Request = $this->getRequest();
+        if ($Request->getMethod() == "POST") {
+            $subject = $Request->get("object");
+
+            $message = "Vous avez reçu un message de :". $Request->get("lastname")." ".$Request->get("firstname")
+                . "\n". $Request->get("email") ."\n\n".$Request->get("message");
+
+            $message = \Swift_Message::newInstance('Test')
+                ->setSubject($subject)
+                ->setFrom('psychomot72@gmail.com')
+                ->setTo('psychomot72@gmail.com')
+                ->setBody($message);
+            $this->get('mailer')->send($message);
+        }
+        return $this->render('PsychomotBundle:psychomot:mail.html.twig');
+    }
 }
