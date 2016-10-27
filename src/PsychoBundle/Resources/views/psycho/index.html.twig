@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Psychos list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Tel</th>
+                <th>Titledef</th>
+                <th>Txtdef</th>
+                <th>Titlewho</th>
+                <th>Txtwho</th>
+                <th>Titlewhy</th>
+                <th>Txtwhy</th>
+                <th>Titlepsy</th>
+                <th>Txtpsy1</th>
+                <th>Txtpsy2</th>
+                <th>Titleconsult</th>
+                <th>Txtconsult</th>
+                <th>Titleinterv</th>
+                <th>Txtinterv</th>
+                <th>Titlebilan</th>
+                <th>Txtbilan</th>
+                <th>Namepsy1</th>
+                <th>Namepsy2</th>
+                <th>Contactadr</th>
+                <th>Contactaddress</th>
+                <th>Contactmail</th>
+                <th>Contacttel</th>
+                <th>Contactname</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for psycho in psychos %}
+            <tr>
+                <td><a href="{{ path('psycho_show', { 'id': psycho.id }) }}">{{ psycho.id }}</a></td>
+                <td>{{ psycho.tel }}</td>
+                <td>{{ psycho.titledef }}</td>
+                <td>{{ psycho.txtdef }}</td>
+                <td>{{ psycho.titleWho }}</td>
+                <td>{{ psycho.txtWho }}</td>
+                <td>{{ psycho.titleWhy }}</td>
+                <td>{{ psycho.txtWhy }}</td>
+                <td>{{ psycho.titlePsy }}</td>
+                <td>{{ psycho.txtPsy1 }}</td>
+                <td>{{ psycho.txtPsy2 }}</td>
+                <td>{{ psycho.titleConsult }}</td>
+                <td>{{ psycho.txtConsult }}</td>
+                <td>{{ psycho.titleInterv }}</td>
+                <td>{{ psycho.txtInterv }}</td>
+                <td>{{ psycho.titleBilan }}</td>
+                <td>{{ psycho.txtBilan }}</td>
+                <td>{{ psycho.namePsy1 }}</td>
+                <td>{{ psycho.namePsy2 }}</td>
+                <td>{{ psycho.contactAdr }}</td>
+                <td>{{ psycho.contactAddress }}</td>
+                <td>{{ psycho.contactMail }}</td>
+                <td>{{ psycho.contactTel }}</td>
+                <td>{{ psycho.contactName }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('psycho_show', { 'id': psycho.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('psycho_edit', { 'id': psycho.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('psycho_new') }}">Create a new psycho</a>
+        </li>
+    </ul>
+{% endblock %}

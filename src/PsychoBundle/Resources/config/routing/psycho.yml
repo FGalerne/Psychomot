@@ -1,0 +1,24 @@
+psycho_index:
+    path:     /
+    defaults: { _controller: "PsychoBundle:Psycho:index" }
+    methods:  GET
+
+psycho_show:
+    path:     /{id}/show
+    defaults: { _controller: "PsychoBundle:Psycho:show" }
+    methods:  GET
+
+psycho_new:
+    path:     /new
+    defaults: { _controller: "PsychoBundle:Psycho:new" }
+    methods:  [GET, POST]
+
+psycho_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PsychoBundle:Psycho:edit" }
+    methods:  [GET, POST]
+
+psycho_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PsychoBundle:Psycho:delete" }
+    methods:  DELETE

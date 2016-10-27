@@ -1,0 +1,7 @@
+psycho_psycho:
+    resource: "@PsychoBundle/Resources/config/routing/psycho.yml"
+    prefix:   /psycho
+
+psycho_homepage:
+    path:     /
+    defaults: { _controller: PsychoBundle:Default:index }

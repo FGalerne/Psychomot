@@ -1,0 +1,120 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Psycho</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ psycho.id }}</td>
+            </tr>
+            <tr>
+                <th>Tel</th>
+                <td>{{ psycho.tel }}</td>
+            </tr>
+            <tr>
+                <th>Titledef</th>
+                <td>{{ psycho.titledef }}</td>
+            </tr>
+            <tr>
+                <th>Txtdef</th>
+                <td>{{ psycho.txtdef }}</td>
+            </tr>
+            <tr>
+                <th>Titlewho</th>
+                <td>{{ psycho.titleWho }}</td>
+            </tr>
+            <tr>
+                <th>Txtwho</th>
+                <td>{{ psycho.txtWho }}</td>
+            </tr>
+            <tr>
+                <th>Titlewhy</th>
+                <td>{{ psycho.titleWhy }}</td>
+            </tr>
+            <tr>
+                <th>Txtwhy</th>
+                <td>{{ psycho.txtWhy }}</td>
+            </tr>
+            <tr>
+                <th>Titlepsy</th>
+                <td>{{ psycho.titlePsy }}</td>
+            </tr>
+            <tr>
+                <th>Txtpsy1</th>
+                <td>{{ psycho.txtPsy1 }}</td>
+            </tr>
+            <tr>
+                <th>Txtpsy2</th>
+                <td>{{ psycho.txtPsy2 }}</td>
+            </tr>
+            <tr>
+                <th>Titleconsult</th>
+                <td>{{ psycho.titleConsult }}</td>
+            </tr>
+            <tr>
+                <th>Txtconsult</th>
+                <td>{{ psycho.txtConsult }}</td>
+            </tr>
+            <tr>
+                <th>Titleinterv</th>
+                <td>{{ psycho.titleInterv }}</td>
+            </tr>
+            <tr>
+                <th>Txtinterv</th>
+                <td>{{ psycho.txtInterv }}</td>
+            </tr>
+            <tr>
+                <th>Titlebilan</th>
+                <td>{{ psycho.titleBilan }}</td>
+            </tr>
+            <tr>
+                <th>Txtbilan</th>
+                <td>{{ psycho.txtBilan }}</td>
+            </tr>
+            <tr>
+                <th>Namepsy1</th>
+                <td>{{ psycho.namePsy1 }}</td>
+            </tr>
+            <tr>
+                <th>Namepsy2</th>
+                <td>{{ psycho.namePsy2 }}</td>
+            </tr>
+            <tr>
+                <th>Contactadr</th>
+                <td>{{ psycho.contactAdr }}</td>
+            </tr>
+            <tr>
+                <th>Contactaddress</th>
+                <td>{{ psycho.contactAddress }}</td>
+            </tr>
+            <tr>
+                <th>Contactmail</th>
+                <td>{{ psycho.contactMail }}</td>
+            </tr>
+            <tr>
+                <th>Contacttel</th>
+                <td>{{ psycho.contactTel }}</td>
+            </tr>
+            <tr>
+                <th>Contactname</th>
+                <td>{{ psycho.contactName }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('psycho_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('psycho_edit', { 'id': psycho.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

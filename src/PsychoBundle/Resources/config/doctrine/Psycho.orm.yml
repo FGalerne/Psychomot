@@ -1,0 +1,75 @@
+PsychoBundle\Entity\Psycho:
+    type: entity
+    table: null
+    repositoryClass: PsychoBundle\Repository\PsychoRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        tel:
+            type: string
+            length: '14'
+        titledef:
+            type: string
+            length: 255
+        txtdef:
+            type: string
+            length: '900'
+        titleWho:
+            type: string
+            length: 255
+        txtWho:
+            type: string
+            length: '4000'
+        titleWhy:
+            type: string
+            length: 255
+        txtWhy:
+            type: text
+        titlePsy:
+            type: string
+            length: 255
+        txtPsy1:
+            type: text
+        txtPsy2:
+            type: text
+        titleConsult:
+            type: string
+            length: 255
+        txtConsult:
+            type: text
+        titleInterv:
+            type: string
+            length: 255
+        txtInterv:
+            type: text
+        titleBilan:
+            type: string
+            length: 255
+        txtBilan:
+            type: text
+        namePsy1:
+            type: string
+            length: 255
+        namePsy2:
+            type: string
+            length: 255
+        contactAdr:
+            type: string
+            length: 255
+        contactAddress:
+            type: string
+            length: 255
+        contactMail:
+            type: string
+            length: 255
+        contactTel:
+            type: string
+            length: 255
+        contactName:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
