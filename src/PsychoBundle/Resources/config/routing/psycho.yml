@@ -30,4 +30,4 @@ psycho_redirection:
 
 psycho_mail:
     path:     /
-    defaults: { _controller: "PsychomotBundle:Psychomot:mail" }
+    defaults: { _controller: "PsychoBundle:Psycho:mail" }
