@@ -28,7 +28,7 @@
                 <li><a class="js-scrollTo" href="#psychomot">Les psychomotriciennes</a></li>
                 <li><a class="js-scrollTo" href="#consultation">Interventions</a></li>
                 <li><a class="js-scrollTo" href="#page-contact">Contact</a></li>
-                <li><a>{{ psychomot.tel }}</a></li>
+                <li><a>{{ psycho.tel }}</a></li>
             </ul>
         </div>
     </nav>contactName
@@ -64,7 +64,7 @@
                 <h2>Lorem Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> -->
                             <div>
-                                <h2 class="psyco_titre1"> {{ psycho.titleDef }}</h2>
+                                <h2 class="psyco_titre1"> {{ psycho.titledef }}</h2>
                                 <img class="psyco_img1" src="{{asset('bundles/psychomot/img/1_questcequecest_500-575.jpg')}}">
                                 <p class="psyco_texte1"> {{ psycho.txtDef }} </p>
                             </div>
@@ -194,12 +194,12 @@
             <h3>Nous contacter</h3>
             <div class="adress">
                 <p>{{ psycho.contactName }}</p>
-                <p>{{ psycho.contactAdress }}</p>
+                <p>{{ psycho.contactAddress }}</p>
                 <p>{{ psycho.contactMail }}</p>
                 <p>{{ psycho.contactTel }}</p>
             </div>
             {% endfor %}
-            <form action="{{  path('psychomot_mail') }}" method="post">
+            <form action="{{  path('psycho_mail') }}" method="post">
                 <div class="form-group row">
                     <label for="example-text-input" class="col-xs-3 col-form-label">Prénom :</label>
                     <div class="col-xs-9">

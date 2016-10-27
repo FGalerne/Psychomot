@@ -56,12 +56,12 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> -->
                             <div>
                                 <h2 class="psyco_titre1"> {{ psycho.titleDef }}</h2>
-                                {{ form_widget(form.titleDef, {'attr': {'class': 'form-control'}}) }}
-                                {{ form_errors(form.titleDef) }}
+                                {{ form_widget(form.titledef, {'attr': {'class': 'form-control'}}) }}
+                                {{ form_errors(form.titledef) }}
                                 <input type="submit" value="Edit" />
-                                <p class="psyco_texte1"> {{ psycho.txtDef }} </p>
-                                {{ form_widget(form.txtDef, {'attr': {'class': 'form-control'}}) }}
-                                {{ form_errors(form.txtDef) }}
+                                <p class="psyco_texte1"> {{ psycho.txtdef }} </p>
+                                {{ form_widget(form.txtdef, {'attr': {'class': 'form-control'}}) }}
+                                {{ form_errors(form.txtdef) }}
                                 <input type="submit" value="Edit" />
                             </div>
                             <div>
@@ -248,10 +248,10 @@
                         {{ form_widget(form.contactName, {'attr': {'class': 'form-control'}}) }}
                         {{ form_errors(form.contactName) }}
                     </div>
-                    <p>{{ psycho.contactAdress }}</p>
+                    <p>{{ psycho.contactAddress }}</p>
                     <div>
-                        {{ form_widget(form.contactAdress, {'attr': {'class': 'form-control'}}) }}
-                        {{ form_errors(form.contactAdress) }}
+                        {{ form_widget(form.contactAddress, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.contactAddress) }}
                     </div>
                     <p>{{ psycho.contactMail }}</p>
                     <div>
@@ -305,7 +305,7 @@
         <a href="{{ path('psycho_index') }}">Back to the list</a>
     </li>
 
-    {{ psychomot.image }}
+    {#{{ psycho.image }}#}
     <input type="submit" value="Edit" />
     {{ form_end(form) }}
 

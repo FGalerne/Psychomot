@@ -22,7 +22,7 @@ class PsychoController extends Controller
 
         $psychos = $em->getRepository('PsychoBundle:Psycho')->findAll();
 
-        return $this->render('@Psycho/psycho/index.html.twig', array(
+        return $this->render('PsychoBundle:psycho:index.html.twig', array(
             'psychos' => $psychos,
         ));
     }
@@ -45,7 +45,7 @@ class PsychoController extends Controller
             return $this->redirectToRoute('psycho_show', array('id' => $psycho->getId()));
         }
 
-        return $this->render('@Psycho/psycho/new.html.twig', array(
+        return $this->render('PsychoBundle:psycho:edit.html.twig', array(
             'psycho' => $psycho,
             'form' => $form->createView(),
         ));
@@ -59,7 +59,7 @@ class PsychoController extends Controller
     {
         $deleteForm = $this->createDeleteForm($psycho);
 
-        return $this->render('@Psycho/psycho/show.html.twig', array(
+        return $this->render('PsychoBundle:psycho:show.html.twig', array(
             'psycho' => $psycho,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -81,9 +81,9 @@ class PsychoController extends Controller
             return $this->redirectToRoute('psycho_edit', array('id' => $psycho->getId()));
         }
 
-        return $this->render('@Psycho/psycho/edit.html.twig', array(
+        return $this->render('PsychoBundle:psycho:edit.html.twig', array(
             'psycho' => $psycho,
-            'edit_form' => $editForm->createView(),
+            'form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }
@@ -137,6 +137,6 @@ class PsychoController extends Controller
                 ->setBody($message);
             $this->get('mailer')->send($message);
         }
-        return $this->render('PsychomotBundle:psychomot:mail.html.twig');
+        return $this->render('PsychoBundle:psycho:mail.html.twig');
     }
 }

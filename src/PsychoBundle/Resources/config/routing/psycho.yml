@@ -22,3 +22,12 @@ psycho_delete:
     path:     /{id}/delete
     defaults: { _controller: "PsychoBundle:Psycho:delete" }
     methods:  DELETE
+
+psycho_redirection:
+    path:     /redirection
+    defaults: { _controller: "SiteBundle:Default:redirection" }
+    methods:  DELETE
+
+psycho_mail:
+    path:     /
+    defaults: { _controller: "PsychomotBundle:Psychomot:mail" }
