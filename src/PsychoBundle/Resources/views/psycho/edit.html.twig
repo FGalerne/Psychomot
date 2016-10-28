@@ -19,6 +19,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">Logo</a>
+            <a class="telephone" >{{ psycho.tel }}</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -28,9 +29,7 @@
                 <li><a class="js-scrollTo" href="#psychomot">Les psychomotriciennes</a></li>
                 <li><a class="js-scrollTo" href="#consultation">Interventions</a></li>
                 <li><a class="js-scrollTo" href="#page-contact">Contact</a></li>
-                <li><a>{{ psycho.tel }}</a></li>
             </ul>
-
             <div>
                 {{ form_widget(form.tel, {'attr': {'class': 'form-control'}}) }}
                 {{ form_errors(form.tel) }}
@@ -55,7 +54,7 @@
                 <h2>Lorem Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> -->
                             <div>
-                                <h2 class="psyco_titre1"> {{ psycho.titleDef }}</h2>
+                                <h2 class="psyco_titre1"> {{ psycho.titledef }}</h2>
                                 {{ form_widget(form.titledef, {'attr': {'class': 'form-control'}}) }}
                                 {{ form_errors(form.titledef) }}
                                 <input type="submit" value="Edit" />
@@ -66,7 +65,7 @@
                             </div>
                             <div>
                                 <!-- <img class="psyco_img1" src="./img/SAM_2242-500_375.JPG"> -->
-                                <!-- <img class="psyco_img1" src="{{asset('bundles/psychomot/img/1_questcequecest_500-575.jpg')}}"> -->
+                                <!-- <img class="psyco_img1" src="{{asset('bundles/psycho/img/1_questcequecest_500-575.jpg')}}"> -->
                             </div>
                         </a>
                     </div>
@@ -79,7 +78,7 @@
                                 {{ form_widget(form.titleWho, {'attr': {'class': 'form-control'}}) }}
                                 {{ form_errors(form.titleWho) }}
                                 <input type="submit" value="Edit" />
-                                <!--<img class="psyco_img1" src="{{asset('bundles/psychomot/img/1_Pour_qui.jpg')}}"> -->
+                                <!--<img class="psyco_img1" src="{{asset('bundles/psycho/img/1_Pour_qui.jpg')}}"> -->
                                 <p>{{ psycho.txtWho }}</p>
                                 {{ form_widget(form.txtWho, {'attr': {'class': 'form-control'}}) }}
                                 {{ form_errors(form.txtWho) }}
@@ -96,7 +95,7 @@
                                 {{ form_widget(form.titleWhy, {'attr': {'class': 'form-control'}}) }}
                                 {{ form_errors(form.titleWhy) }}
                                 <input type="submit" value="Edit" />
-                                <!--<img class="psyco_img1" src="{{asset('bundles/psychomot/img/1_Pourquoi.jpg')}}">-->
+                                <!--<img class="psyco_img1" src="{{asset('bundles/psycho/img/1_Pourquoi.jpg')}}">-->
                                 <p>{{ psycho.txtWhy }}</p>
                                 {{ form_widget(form.txtWhy, {'attr': {'class': 'form-control'}}) }}
                                 {{ form_errors(form.txtWhy) }}
@@ -126,7 +125,7 @@
             <div class="fond">
                 <div class="left col-xs-12 col-sm-6 col-md-6">
                     <div class="col-xs-12">
-                        <img src="{{asset('bundles/psychomot/img/Psy2.jpg') }}" alt="Margaux Charrier" />
+                        <img src="{{asset('bundles/psycho/img/Psy2.jpg') }}" alt="Margaux Charrier" />
                         <div class="border">
                             <h3>{{ psycho.namePsy1 }}</h3>
                             <div>
@@ -144,7 +143,7 @@
                 </div>
                 <div class="right col-xs-12 col-sm-6 col-md-6">
                     <div class="col-xs-12">
-                        <img src="{{asset('bundles/psychomot/img/Psy1.jpg') }}" alt="Adeline Florentin" />
+                        <img src="{{asset('bundles/psycho/img/Psy1.jpg') }}" alt="Adeline Florentin" />
                         <div class="border">
                             <h3>{{ psycho.namePsy2 }}</h3>
                             <div>
@@ -305,7 +304,7 @@
         <a href="{{ path('psycho_index') }}">Back to the list</a>
     </li>
 
-    {#{{ psycho.image }}#}
+    {{ psycho.image }}
     <input type="submit" value="Edit" />
     {{ form_end(form) }}
 

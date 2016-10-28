@@ -6,6 +6,8 @@ use PsychoBundle\Entity\Psycho;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
+use PsychomotBundle\Form\PsychomotType;
+
 /**
  * Psycho controller.
  *
@@ -45,7 +47,7 @@ class PsychoController extends Controller
             return $this->redirectToRoute('psycho_show', array('id' => $psycho->getId()));
         }
 
-        return $this->render('PsychoBundle:psycho:edit.html.twig', array(
+        return $this->render('PsychoBundle:psycho:new.html.twig', array(
             'psycho' => $psycho,
             'form' => $form->createView(),
         ));
@@ -76,7 +78,9 @@ class PsychoController extends Controller
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
-            $this->getDoctrine()->getManager()->flush();
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($psycho);
+            $em->flush();
 
             return $this->redirectToRoute('psycho_edit', array('id' => $psycho->getId()));
         }
