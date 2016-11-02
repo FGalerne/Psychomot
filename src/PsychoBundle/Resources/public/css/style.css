@@ -25,6 +25,12 @@
 .navbar-default .navbar-nav > .active > a:focus {
     color: lightblue;
     background-color: #518e86;
+
+}
+
+.tel{
+    margin-right: 20px;
+
 }
 
 @media (max-width: 900px) {
@@ -142,13 +148,26 @@ body {
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700);
 
 #Psychomotricité {
-    max-width: 25000px;
-    height: auto;
+    max-width: 2500px;
+    height: 700px;
     background-color: #82BDB5;
+}
+h1 {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    color: #333;
+    margin-top: 100px;
+}
+
+h3 {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    margin-top: 100px;
 }
 
 .accordion1 {
     max-width: 2500px;
+    height: 700px;
     overflow: hidden;
 }
 
@@ -165,6 +184,7 @@ body {
     vertical-align: bottom;
     position: relative;
     width: 16.666%;
+    height: 700px;
     background-repeat: no-repeat;
     background-position: center center;
     transition: all 500ms ease;
@@ -178,7 +198,7 @@ body {
 
 .accordion1 ul li div a {
     display: block;
-    height: 600px;
+    height: 700px;
     width: 100%;
     position: relative;
     z-index: 3;
@@ -211,20 +231,20 @@ body {
     text-overflow: clip;
     font-size: 24px;
     text-transform: uppercase;
-    margin-bottom: 10px;
-    top: -10px;
-    margin-left: 120px;
+
+    margin-top: 3vw;
+
     color: black;
 }
 
 .accordion1 ul li div a p {
-    overflow-y: scroll;
-    top: 0px;
+    top: 20px;
     font-size: 16px;
-    width: 50%;
-    height: 455px;
+    width: 700px;
+    height: 500px;
     text-align: justify;
     text-justify: inter-word;
+    overflow: auto;
     color: black;
 }
 
@@ -237,7 +257,8 @@ body {
     height: 575px;
     float: right;
     margin-right: 5vw;
-    margin-top: -5vw;
+    margin-top: -2vw;
+
 }
 
 .accordion1 ul li:nth-child(1) { background-image: url("../img/2Psychomotricite.jpg");height: 700px; }

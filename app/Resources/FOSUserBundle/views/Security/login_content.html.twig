@@ -12,7 +12,7 @@
     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 {% endif %}
 <div class="card col-xs-offset-4 col-xs-4">
-    <img class="card-img-top col-xs-5" src="{{ asset('bundles/psychomot/img/logo250.jpg') }}" alt="Card image cap">
+    <img class="card-img-top col-xs-5" src="{{ asset('bundles/psycho/img/logo250.jpg') }}" alt="Card image cap">
     <div class="card-block col-xs-12">
         <form action="{{ path("fos_user_security_check") }}" method="post">
             {% if csrf_token %}
@@ -35,7 +35,7 @@
                 <label for="remember_me">{{ 'se souvenir de moi'|trans }}</label>
             </div>
             <div class-xs-offset-2>
-                <input type="submit" class="btn btn-success" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+                <input type="submit" class="btn btn-success" id="_submit" name="_submit" value="{{ 'Se connecter'|trans }}" />
             </div>
         </form>
     </div>

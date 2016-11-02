@@ -74,11 +74,9 @@
                             </div>
                             <div>
                                 <img src="{{ app.request.basepath }}/uploads/{{ psycho.image1 }}">
-                                {{form.children.file1.vars.label}}
+                                {#{{form.children.file1.vars.label}}#}
                                 {{ form_widget(form.file1) }}
                                 {{ form_errors(form.file1) }}
-                                <!-- <img class="psyco_img1" src="./img/SAM_2242-500_375.JPG"> -->
-                                <!-- <img class="psyco_img1" src="{{asset('bundles/psycho/img/1_questcequecest_500-575.jpg')}}"> -->
                             </div>
                         </a>
                     </div>
@@ -91,7 +89,7 @@
                                 {{ form_widget(form.titleWho, {'attr': {'class': 'form-control'}}) }}
                                 {{ form_errors(form.titleWho) }}
 
-                                <!--<img class="psyco_img1" src="{{asset('bundles/psycho/img/1_Pour_qui.jpg')}}"> -->
+
                                 <p>-- Texte 2 --<br/> {{ psycho.txtWho }}</p>
                                 {{ form_widget(form.txtWho, {'attr': {'class': 'form-control'}}) }}
                                 {{ form_errors(form.txtWho) }}
@@ -114,7 +112,7 @@
                                 {{ form_widget(form.titleWhy, {'attr': {'class': 'form-control'}}) }}
                                 {{ form_errors(form.titleWhy) }}
 
-                                <!--<img class="psyco_img1" src="{{asset('bundles/psycho/img/1_Pourquoi.jpg')}}">-->
+
                                 <p>-- Texte 3 --<br/> {{ psycho.txtWhy }}</p>
                                 {{ form_widget(form.txtWhy, {'attr': {'class': 'form-control'}}) }}
                                 {{ form_errors(form.txtWhy) }}

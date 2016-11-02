@@ -28,12 +28,17 @@
                 <li><a class="js-scrollTo" href="#psychomot">Les psychomotriciennes</a></li>
                 <li><a class="js-scrollTo" href="#consultation">Interventions</a></li>
                 <li><a class="js-scrollTo" href="#page-contact">Contact</a></li>
-                <li><a>{{ psycho.tel }}</a></li>
+
             </ul>
+            <ul class="nav navbar-nav navbar-right tel">
+                <li><a><b>{{ psycho.tel }}</b></a></li>
+            </ul>
+
+
         </div>
     </nav>
 
-<!-- Fin Nav Bar -->
+<!-- Fin Nav Bar --
 
 
 <!--Accueil-->
@@ -59,27 +64,26 @@
             <ul>
                 <li>
                     <div>
-                        <a href="#Psychomotricité">
-                            <div>
-                                <h2 class="psyco_titre1"> {{ psycho.titledef }}</h2>
-                                <img src="{{ app.request.basepath }}/uploads/{{ psycho.image1 }}">
-                                <p class="psyco_texte1"> {{ psycho.txtdef }} </p>
-                            </div>
+                        <a>
+                            <h2 class="psyco_titre1"> {{ psycho.titledef }}</h2>
+                            <img src="{{ app.request.basepath }}/uploads/{{ psycho.image1 }}">
+                            <p class="psyco_texte1"> {{ psycho.txtdef }} </p>
+
                         </a>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <a href="#Psychomotricité">
+                        <a>
                             <h2>{{ psycho.titleWho }}</h2>
-                            <img src="{{ app.request.basepath }}/uploads/{{ psycho.image2 }}">
+                            <img src="{{ app.request.basepath }}/uploads/{{ psycho.image2 }}" class="toto">
                             <p>{{ psycho.txtWho }}</p>
                         </a>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <a href="#Psychomotricité">
+                        <a>
                             <h2>{{ psycho.titleWhy }}</h2>
                             <img src="{{ app.request.basepath }}/uploads/{{ psycho.image3 }}">
                             <p>{{ psycho.txtWhy }}</p>
