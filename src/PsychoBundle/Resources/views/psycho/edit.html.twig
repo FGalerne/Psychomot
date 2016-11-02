@@ -25,7 +25,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">Logo</a>
-            <a class="telephone" >{{ psycho.tel }}</a>
+
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -35,6 +35,8 @@
                 <li><a class="js-scrollTo" href="#psychomot">Les psychomotriciennes</a></li>
                 <li><a class="js-scrollTo" href="#consultation">Interventions</a></li>
                 <li><a class="js-scrollTo" href="#page-contact">Contact</a></li>
+                <li><input type="submit" value="Mise à jour" class="MiseAJour"/></li>
+                <a class="telephone" >{{ psycho.tel }}</a>
             </ul>
             <div>
                 {{ form_widget(form.tel, {'attr': {'class': 'form-control'}}) }}
@@ -46,7 +48,10 @@
     <!-- Fin Nav Bar -->
 
 
-    <br/>
+    <br/><br/>
+    <br/><br/>
+
+
 
     <!--Début Psychomotricité-->
 
@@ -55,19 +60,17 @@
             <ul>
                 <li>
                     <div>
-                        <a href="#Psychomotricité">
-                            <!-- <img src="http://www.designchemical.com/lab/jquery/demo/images/section_1.png"></img>
-                <h2>Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> -->
+                        <a>
+
                             <div>
-                                <h2 class="psyco_titre1"> {{ psycho.titledef }}</h2>
+                                <h2 class="psyco_titre1">-- Titre 1 --<br/> {{ psycho.titledef }}</h2>
                                 {{ form_widget(form.titledef, {'attr': {'class': 'form-control'}}) }}
                                 {{ form_errors(form.titledef) }}
-                                <input type="submit" value="Edit" />
-                                <p class="psyco_texte1"> {{ psycho.txtdef }} </p>
+
+                                <p class="psyco_texte1">-- Texte 1 --<br/> {{ psycho.txtdef }} </p>
                                 {{ form_widget(form.txtdef, {'attr': {'class': 'form-control'}}) }}
                                 {{ form_errors(form.txtdef) }}
-                                <input type="submit" value="Edit" />
+
                             </div>
                             <div>
                                 <img src="{{ app.request.basepath }}/uploads/{{ psycho.image1 }}">
@@ -82,17 +85,17 @@
                 </li>
                 <li>
                     <div>
-                        <a href="#Psychomotricité">
+                        <a>
                             <div>
-                                <h2>{{ psycho.titleWho }}</h2>
+                                <h2>-- Titre 2 --<br/> {{ psycho.titleWho }}</h2>
                                 {{ form_widget(form.titleWho, {'attr': {'class': 'form-control'}}) }}
                                 {{ form_errors(form.titleWho) }}
-                                <input type="submit" value="Edit" />
+
                                 <!--<img class="psyco_img1" src="{{asset('bundles/psycho/img/1_Pour_qui.jpg')}}"> -->
-                                <p>{{ psycho.txtWho }}</p>
+                                <p>-- Texte 2 --<br/> {{ psycho.txtWho }}</p>
                                 {{ form_widget(form.txtWho, {'attr': {'class': 'form-control'}}) }}
                                 {{ form_errors(form.txtWho) }}
-                                <input type="submit" value="Edit" />
+
                             </div>
                             <div>
                                 <img src="{{ app.request.basepath }}/uploads/{{ psycho.image2 }}">
@@ -105,17 +108,17 @@
                 </li>
                 <li>
                     <div>
-                        <a href="#Psychomotricité">
+                        <a>
                             <div>
-                                <h2>{{ psycho.titleWhy }}</h2>
+                                <h2>-- Titre 3 --<br/> {{ psycho.titleWhy }}</h2>
                                 {{ form_widget(form.titleWhy, {'attr': {'class': 'form-control'}}) }}
                                 {{ form_errors(form.titleWhy) }}
-                                <input type="submit" value="Edit" />
+
                                 <!--<img class="psyco_img1" src="{{asset('bundles/psycho/img/1_Pourquoi.jpg')}}">-->
-                                <p>{{ psycho.txtWhy }}</p>
+                                <p>-- Texte 3 --<br/> {{ psycho.txtWhy }}</p>
                                 {{ form_widget(form.txtWhy, {'attr': {'class': 'form-control'}}) }}
                                 {{ form_errors(form.txtWhy) }}
-                                <input type="submit" value="Edit" />
+
                             </div>
                             <div>
                                 <img src="{{ app.request.basepath }}/uploads/{{ psycho.image3 }}">

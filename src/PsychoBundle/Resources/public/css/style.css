@@ -494,15 +494,15 @@ body {
 }
 
 .accordion ul li:nth-child(1) {
-    background-image: url(../img/slide1.jpg);
+    background-image: url(../img/consultations.jpg);
 }
 
 .accordion ul li:nth-child(2) {
-    background-image: url(../img/slide2.jpg);
+    background-image: url(../img/ateliers.jpg);
 }
 
 .accordion ul li:nth-child(3) {
-    background-image: url(../img/slide3.jpg);
+    background-image: url(../img/bilan.jpg);
 }
 
 
@@ -534,9 +534,9 @@ body {
         height: auto;
     }
 
-    .accordion ul li:nth-child(1) { background-image: url("../img/slide1.jpg");height: 700px; }
-    .accordion ul li:nth-child(2) { background-image: url("../img/slide2.jpg");height: 700px; }
-    .accordion ul li:nth-child(3) { background-image: url("../img/slide3.jpg");height: 700px; }
+    .accordion ul li:nth-child(1) { background-image: url("../img/consultations.jpg");height: 700px; }
+    .accordion ul li:nth-child(2) { background-image: url("../img/ateliers.jpg");height: 700px; }
+    .accordion ul li:nth-child(3) { background-image: url("../img/bilan.jpg");height: 700px; }
 
     .accordion ul li:nth-child(1) { background-color:#82bdb5; height: 700px; }
     .accordion ul li:nth-child(2) { background-color:#82bdb5; height: 700px; }

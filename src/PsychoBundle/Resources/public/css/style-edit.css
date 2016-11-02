@@ -33,6 +33,22 @@
     }
 }
 
+.MiseAJour {
+    padding: 5px 10px 5px 10px;
+    margin-left:25px;
+    margin-top:7px;
+    color: #5eb5e0;
+    background: #ffffff;
+    border: 1px solid #BCECE9;
+}
+
+.telephone{
+    width: 80px;
+    height:30px;
+    margin-left:55px;
+    margin-top:55px;
+}
+
 /*--FIN NAVBAR--*/
 
 
@@ -41,7 +57,7 @@
 
 /*--PAGE HOME--*/
 
-#page-home {
+/*#page-home {
     background: url(../img/Accueil.jpg) no-repeat;
     background-size: cover;
     height: 700px;
@@ -120,7 +136,7 @@
         margin: 5px 10% 5px 10%;
         height: 5px;
     }
-}
+}*/
 /*--FIN PAGE HOME--*/
 
 
@@ -144,8 +160,32 @@ body {
 #Psychomotricité {
     max-width: 25000px;
     height: auto;
+    padding-bottom: 50px;
     background-color: #82BDB5;
 }
+
+#Psychomotricité h2 {
+    text-decoration: none;
+    color: #ffffff;
+    padding-top: 10px;
+    font-size: 1.8em;
+}
+
+#Psychomotricité h2:hover {
+    text-decoration: none;
+}
+
+#Psychomotricité p {
+    padding-top: 10px;
+    color: #ffffff;
+}
+
+#Psychomotricité img{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
 
 /*.accordion1 {
     max-width: 2500px;
