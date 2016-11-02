@@ -13,7 +13,40 @@ class PsychoType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('tel')->add('titledef')->add('txtdef')->add('titleWho')->add('txtWho')->add('titleWhy')->add('txtWhy')->add('titlePsy')->add('txtPsy1')->add('txtPsy2')->add('titleConsult')->add('txtConsult')->add('titleInterv')->add('txtInterv')->add('titleBilan')->add('txtBilan')->add('namePsy1')->add('namePsy2')->add('contactAdr')->add('contactAddress')->add('contactMail')->add('contactTel')->add('contactName')        ;
+        $builder
+            ->add('tel')
+            ->add('titledef')
+            ->add('txtdef')
+            ->add('image1')
+            ->add('file1', 'file', array('label' => 'Inserer/modifier la premère image de l accordéon', 'required' => false))
+            ->add('titleWho')
+            ->add('txtWho')
+            ->add('image2')
+            ->add('file2', 'file', array('label' => 'Inserer/modifier la deuxiéme image de l accordéon', 'required' => false))
+            ->add('titleWhy')
+            ->add('txtWhy')
+            ->add('image3')
+            ->add('file3', 'file', array('label' => 'Inserer/modifier la troiséme image de l accordéon', 'required' => false))
+            ->add('titlePsy')
+            ->add('txtPsy1')
+            ->add('image4')
+            ->add('file4', 'file', array('label' => 'Inserer/modifier la premiére image de la biographie', 'required' => false))
+            ->add('txtPsy2')
+            ->add('image5')
+            ->add('file5', 'file', array('label' => 'Inserer/modifier la deuxiéme image de la biographie', 'required' => false))
+            ->add('titleConsult')
+            ->add('txtConsult')
+            ->add('titleInterv')
+            ->add('txtInterv')
+            ->add('titleBilan')
+            ->add('txtBilan')
+            ->add('namePsy1')
+            ->add('namePsy2')
+            ->add('contactAddress')
+            ->add('contactMail')
+            ->add('contactTel')
+            ->add('contactName');
+
     }
     
     /**

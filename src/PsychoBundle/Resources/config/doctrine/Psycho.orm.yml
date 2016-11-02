@@ -72,4 +72,28 @@ PsychoBundle\Entity\Psycho:
         contactName:
             type: string
             length: 255
-    lifecycleCallbacks: {  }
+        image:
+            type: string
+            length: 255
+        image1:
+            type: string
+            length: 25
+        image2:
+            type: string
+            length: 25
+        image3:
+            type: string
+            length: 25
+        image4:
+            type: string
+            length: 25
+        image5:
+            type: string
+            length: 25
+
+    lifecycleCallbacks:
+      prePersist: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5 ]
+      preUpdate: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5 ]
+      postPersist: [ upload, upload1, upload2,upload3, upload4,upload5 ]
+      postUpdate: [ upload, upload1, upload2,upload3, upload4,upload5 ]
+      postRemove: [ removeUpload, removeUpload1, removeUpload2,removeUpload3, removeUpload4,removeUpload5 ]

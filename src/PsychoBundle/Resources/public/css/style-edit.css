@@ -1,0 +1,787 @@
+/*--DEBUT NAVBAR--*/
+
+.navbar-default {
+    background-color: #82bdb5;
+    font-size: 1.2em;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: lightblue;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: lightblue;
+    background-color: #518e86;
+}
+
+@media (max-width: 900px) {
+    .navbar-default {
+        font-size: 1em;
+    }
+}
+
+/*--FIN NAVBAR--*/
+
+
+
+
+
+/*--PAGE HOME--*/
+
+#page-home {
+    background: url(../img/Accueil.jpg) no-repeat;
+    background-size: cover;
+    height: 700px;
+    margin-top: 0;
+}
+
+#title {
+    padding-top: 100px;
+}
+
+#page-home h1 {
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+    margin: 5px 25% 5px 25%;
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 50px;
+}
+
+#page-home hr{
+    background-color: rgba(255,255,255,0.7);
+    padding-top: 5px;
+    margin: 5px 25% 5px 25%;
+    height: 5px;
+}
+
+.home-adresse{
+    font-size: 0.6em;
+}
+
+@media screen and (max-width: 900px) {
+    #page-home h1 {
+        background-color: rgba(255,255,255,0.7);
+        text-align: center;
+        margin: 5px 25% 5px 25%;
+        padding-top:50px;
+        padding-bottom:50px;
+        padding-left:8%;
+        line-height: 50px;
+        font-size: 1.8em;
+    }
+    #page-home hr{
+        background-color: rgba(255,255,255,0.7);
+        padding-top: 5px;
+        margin: 5px 25% 5px 25%;
+        height: 5px;
+    }
+
+    #page-home h1 span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #page-home h1 {
+        background-color: rgba(255,255,255,0.7);
+        text-align: center;
+        margin: 5px 10% 5px 10%;
+        padding-top:50px;
+        padding-bottom:50px;
+        padding-left:2%;
+        line-height: 50px;
+        font-size: 1.8em;
+    }
+
+    #page-home h1 span {
+        padding-left: 10%;
+        font-size: 20px;
+    }
+
+    #page-home hr{
+        background-color: rgba(255,255,255,0.7);
+        padding-top: 5px;
+        margin: 5px 10% 5px 10%;
+        height: 5px;
+    }
+}
+/*--FIN PAGE HOME--*/
+
+
+
+
+
+body {
+    margin-top:0;
+
+}
+
+
+
+
+
+/*--DEBUT PSYCHOMOTRICITE--*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+
+#Psychomotricité {
+    max-width: 25000px;
+    height: auto;
+    background-color: #82BDB5;
+}
+
+/*.accordion1 {
+    max-width: 2500px;
+    overflow: hidden;
+}
+
+.accordion1 ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion1 ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 16.666%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 500ms ease;
+}
+
+.accordion1 ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.accordion1 ul li div a {
+    display: block;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    vertical-align: bottom;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-family: Open Sans, sans-serif;
+    transition: all 200ms ease;
+}
+
+.accordion1 ul li div a * {
+    opacity: 0;
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 5;
+    white-space: pre-line;
+    overflow: hidden;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.accordion1 ul li div a h2 {
+    font-family: Montserrat, sans-serif;
+    text-overflow: clip;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    top: -10px;
+    margin-left: 120px;
+    color: black;
+}
+
+.accordion1 ul li div a p {
+    overflow-y: scroll;
+    top: 0px;
+    font-size: 16px;
+    width: 50%;
+    height: 455px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: black;
+}
+
+.accordion1 ul li div a p span {
+    font-weight:900;
+}
+
+.accordion1 ul li div a img {
+    width: 500px;
+    height: 575px;
+    float: right;
+    margin-right: 5vw;
+    margin-top: -5vw;
+}
+
+.accordion1 ul li:nth-child(1) { background-image: url("../img/2Psychomotricite.jpg");height: 700px; }
+.accordion1 ul li:nth-child(2) { background-image: url("../img/3Pourqui.jpg");height: 700px; }
+.accordion1 ul li:nth-child(3) { background-image: url("../img/4Pourquoi.jpg");height: 700px; }
+
+.accordion1 ul li:nth-child(1) { background-color:#82bdb5; }
+.accordion1 ul li:nth-child(2) { background-color:#82bdb5; }
+.accordion1 ul li:nth-child(3) { background-color:#82bdb5; }
+
+.accordion1 ul:hover li { width: 4%; }
+
+.accordion1 ul:hover li:hover {
+    width: 60%;
+    background-image: none;
+}
+
+.accordion1 ul:hover li:hover a { background: rgba(0, 0, 0, 0); }
+
+.accordion1 ul:hover li:hover a * {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    background-image: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    body {
+        margin: 0;
+    }
+    .accordion1 {
+        height: auto;
+    }
+    .accordion1 ul li,
+    .accordion1 ul li:hover,
+    .accordion1 ul:hover li,
+    .accordion1 ul:hover li:hover {
+        position: relative;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        -webkit-transition: none;
+        transition: none;
+    }
+    .accordion1 ul li div a img {
+        display:none;
+    }
+
+    .accordion1 ul li div a h2 {
+        font-family: Montserrat, sans-serif;
+        text-overflow: clip;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        top: -10px;
+        margin-left: 10px;
+        color: black;
+    }
+
+    .accordion1 ul li div a p {
+        overflow-y: scroll;
+        top: 0px;
+        font-size: 16px;
+        margin-left: 10px;
+        width: 95%;
+        height: 455px;
+        text-align: justify;
+        text-justify: inter-word;
+
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .accordion1 ul li div a img {
+        display:none;
+    }
+
+
+    .accordion1 ul li div a p {
+        overflow-y: scroll;
+        top: 0px;
+        font-size: 16px;
+        margin-left: 10px;
+        width: 95%;
+        height: 455px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}*/
+
+/*--FIN PSYCHOMOTRICITE--*/
+
+
+/*--DEBUT PSYCHOMOTRICIENNES--*/
+
+#psychomot {
+    height: auto;
+}
+
+.left, .right {
+    padding-bottom: 50px;
+    /*color: white;*/
+    padding-top: 70px;
+}
+
+.border {
+    border: 5px solid #82BDB5;
+    margin-top: 20px;
+}
+
+#psychomot h3, #psychomot h5 {
+    text-align: center;
+}
+
+#psychomot p {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 15px 15px 15px 15px;
+    font-size: 16px;
+    white-space: pre-wrap;
+}
+
+#psychomot img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+    border: 5px solid #82BDB5;
+    width: 70%;
+}
+
+#psychomot h3 {
+    background-color: white;
+    margin: -15px 160px 0 160px;
+    color: #82BDB5;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    #psychomot img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 60px;
+        border: 5px solid #82BDB5;
+        width: 100%;
+    }
+
+    #psychomot h3 {
+        background-color: white;
+        margin: -15px 60px 0 60px;
+        color: #82BDB5;
+    }
+}
+
+/*--FIN PSYCHOMOTRICIENNES--*/
+
+
+
+
+
+/*--DEBUT INTERVENTION--*/
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+
+
+.accordion {
+    max-width: 2500px;
+    height: 600px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.accordion ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 16.666%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    transition: all 500ms ease;
+}
+
+.accordion ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.accordion ul li div a {
+    display: block;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    vertical-align: bottom;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-family: Open Sans, sans-serif;
+    transition: all 200ms ease;
+}
+
+.accordion ul li div a * {
+    opacity: 0;
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 5;
+    white-space: pre-wrap;
+    overflow: hidden;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.accordion ul li div a h2 {
+    font-family: Montserrat, sans-serif;
+    text-overflow: clip;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    top: -40px;
+    margin-left: 120px;
+    /*background: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+}
+
+.accordion ul li div a p {
+    top: -70px;
+    font-size: 16px;
+    margin-left: 120px;
+    width: 80%;
+    height: 550px;
+    text-align: justify;
+    text-justify: inter-word;
+    /*background: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+}
+
+.accordion ul li:nth-child(1) {
+    background-image: url(../img/slide1.jpg);
+}
+
+.accordion ul li:nth-child(2) {
+    background-image: url(../img/slide2.jpg);
+}
+
+.accordion ul li:nth-child(3) {
+    background-image: url(../img/slide3.jpg);
+}
+
+
+.accordion ul:hover li {
+    width: 4%;
+}
+
+.accordion ul:hover li:hover {
+    width: 60%;
+}
+
+.accordion ul:hover li:hover a {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.accordion ul:hover li:hover a * {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 1000px) {
+
+    .accordion {
+        height: auto;
+    }
+
+    .accordion {
+        height: auto;
+    }
+
+    .accordion ul li:nth-child(1) { background-image: url("../img/slide1.jpg");height: 700px; }
+    .accordion ul li:nth-child(2) { background-image: url("../img/slide2.jpg");height: 700px; }
+    .accordion ul li:nth-child(3) { background-image: url("../img/slide3.jpg");height: 700px; }
+
+    .accordion ul li:nth-child(1) { background-color:#82bdb5; height: 700px; }
+    .accordion ul li:nth-child(2) { background-color:#82bdb5; height: 700px; }
+    .accordion ul li:nth-child(3) { background-color:#82bdb5; height: 700px; }
+
+
+    .accordion ul:hover li {
+        width: 4%;
+    }
+
+    .accordion ul:hover li:hover {
+        width: 60%;
+        background-image: none;
+    }
+
+    .accordion ul:hover li:hover a {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .accordion ul:hover li:hover a * {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        background-image: none;
+    }
+
+    .accordion ul li div a h2 {
+        font-family: Montserrat, sans-serif;
+        text-overflow: clip;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+        top: -40px;
+        margin-left: 10px;
+    }
+
+    .accordion ul li div a p {
+        overflow-y: scroll;
+        top: -60px;
+        font-size: 16px;
+        margin-left: 10px;
+        width: 95%;
+        height: 455px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .accordion ul li,
+    .accordion ul li:hover,
+    .accordion ul:hover li,
+    .accordion ul:hover li:hover {
+        position: relative;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        -webkit-transition: none;
+        transition: none;
+    }
+
+    .accordion ul:hover li:hover a {
+        background: rgba(0, 0, 0, 0);
+    }
+}*/
+
+/*--FIN INTERVENTION--*/
+
+
+
+
+
+/*DEBUT CONTACT*/
+
+
+#page-contact {
+    padding-top: 70px;
+    /*height: 700px;*/
+    /*background-color: #82BDB5;*/
+    margin-left: 2%;
+}
+
+#page-contact p, #page-contact h3 {
+    text-align: center;
+}
+
+#page-contact p {
+    font-size: 16px;
+}
+
+#page-contact h3 {
+    background-color: white;
+    margin: -15px 120px 0 120px;
+    color: #82BDB5;
+}
+
+.contact {
+    border: 5px solid #82BDB5;
+    margin: 20px 20px 0 30px;
+}
+
+.send {
+    margin-bottom: 10px;
+}
+
+
+.essai1{
+    margin-left: 35px;
+}
+
+.message{
+    text-align: center;
+}
+
+.formulaire, .adress {
+    margin-top: 40px;
+}
+
+.map{
+    margin-top: 95px;
+    margin-left: 60px;
+}
+
+@media screen and (max-width: 1300px) {
+    .map {
+        display:none
+    }
+    #page-contact{
+        width: 150%;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .map {
+        display:none
+    }
+    #page-contact{
+        width: 90%;
+        margin-left: 0%;
+    }
+}
+
+
+
+/*FIN CONTACT*/
+
+
+
+
+
+
+/*--DEBUT FOOTER--*/
+
+footer{
+    background-color: #82BDB5;
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom:8px;
+}
+
+.ml:link {
+    color: white;
+    text-decoration: none;
+}
+
+.ml:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.ml:hover {
+    color: #BCECE9;
+    text-decoration: none;
+}
+
+.ml:active {
+    color: #518e86;
+    text-decoration: none;
+}
+
+.modal-body1{
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #000;
+    background-image: url(../img/points.png);
+    background-position: bottom right;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+
+/*modal Eleves*/
+
+.modal-body{
+    color: black;
+    font-size: 1.2em;
+}
+
+.modal-body h2{
+    color: #FE8801;
+}
+
+.modal-body1 p{
+    color: black;
+    padding-bottom: 30px;
+}
+
+.alert{
+    background-color: #FE9B1A;
+    border: none;
+}
+
+.alert-info{
+    color: #fff;
+}
+
+.lienLink:link {
+    color: #FE9B1A;
+    text-decoration: none;
+}
+
+.lienLink:visited {
+    color: #FE9B1A;
+    text-decoration: none;
+}
+
+.lienLink:hover {
+    color: #FECC76;
+    text-decoration: none;
+}
+
+.lienLink:active {
+    color: #FECC76;
+    text-decoration: none;
+}
+
+#texteWCS{
+    margin-top: 60px;
+}
+
+.wcs{
+    height: 15em;
+    margin-top:20px;
+}
+
+
+/*--FIN FOOTER--*/
+

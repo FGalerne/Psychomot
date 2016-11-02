@@ -10,7 +10,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  */
 class Psycho
 {
-    public $file;
+    public $file1;
 
     protected function getUploadDir()
     {
@@ -31,35 +31,154 @@ class Psycho
     {
         return null === $this->image ? null : $this->getUploadRootDir().'/'.$this->image;
     }
-    public function preUpload()
+    public function preUpload1()
     {
-        if (null !== $this->file) {
+        if (null !== $this->file1) {
             // do whatever you want to generate a unique name
-            $this->image = uniqid().'.'.$this->file->guessExtension();
+            $this->image1 = uniqid().'.'.$this->file1->guessExtension();
         }
     }
 
-    public function upload()
+    public function upload1()
     {
-        if (null === $this->file) {
+        if (null === $this->file1) {
             return;
         }
 
         // if there is an error when moving the file, an exception will
         // be automatically thrown by move(). This will properly prevent
         // the entity from being persisted to the database on error
-        $this->file->move($this->getUploadRootDir(), $this->image);
+        $this->file1->move($this->getUploadRootDir(), $this->image1);
 
-        unset($this->file);
+        unset($this->file1);
     }
 
-    public function removeUpload()
+    public function removeUpload1()
     {
         if ($file = $this->getAbsolutePath()) {
             unlink($file);
         }
     }
+    public $file2;
 
+    public function preUpload2()
+    {
+        if (null !== $this->file2) {
+            // do whatever you want to generate a unique name
+            $this->image2 = uniqid().'.'.$this->file2->guessExtension();
+        }
+    }
+
+    public function upload2()
+    {
+        if (null === $this->file2) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file2->move($this->getUploadRootDir(), $this->image2);
+
+        unset($this->file2);
+    }
+
+    public function removeUpload2()
+    {
+        if ($file = $this->getAbsolutePath()) {
+            unlink($file);
+        }
+    }
+    public $file3;
+
+    public function preUpload3()
+    {
+        if (null !== $this->file3) {
+            // do whatever you want to generate a unique name
+            $this->image3 = uniqid().'.'.$this->file2->guessExtension();
+        }
+    }
+
+    public function upload3()
+    {
+        if (null === $this->file3) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file3->move($this->getUploadRootDir(), $this->image3);
+
+        unset($this->file3);
+    }
+
+    public function removeUpload3()
+    {
+        if ($file = $this->getAbsolutePath()) {
+            unlink($file);
+        }
+    }
+    public $file4;
+
+    public function preUpload4()
+    {
+        if (null !== $this->file4) {
+            // do whatever you want to generate a unique name
+            $this->image4 = uniqid().'.'.$this->file4->guessExtension();
+        }
+    }
+
+    public function upload4()
+    {
+        if (null === $this->file4) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file4->move($this->getUploadRootDir(), $this->image4);
+
+        unset($this->file4);
+    }
+
+    public function removeUpload4()
+    {
+        if ($file = $this->getAbsolutePath()) {
+            unlink($file);
+        }
+    }
+    public $file5;
+
+    public function preUpload5()
+    {
+        if (null !== $this->file5) {
+            // do whatever you want to generate a unique name
+            $this->image5 = uniqid().'.'.$this->file5->guessExtension();
+        }
+    }
+
+    public function upload5()
+    {
+        if (null === $this->file5) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file5->move($this->getUploadRootDir(), $this->image5);
+
+        unset($this->file5);
+    }
+
+    public function removeUpload5()
+    {
+        if ($file = $this->getAbsolutePath()) {
+            unlink($file);
+        }
+    }
     //** CODE GENERE **/
     /**
      * @var int
@@ -746,5 +865,168 @@ class Psycho
     public function getImage()
     {
         return $this->image;
+    }
+    /**
+     * @var string
+     */
+    private $image1;
+
+    /**
+     * @var string
+     */
+    private $image2;
+
+    /**
+     * @var string
+     */
+    private $image3;
+
+    /**
+     * @var string
+     */
+    private $image4;
+
+    /**
+     * @var string
+     */
+    private $image5;
+
+
+    /**
+     * Set image1
+     *
+     * @param string $image1
+     * @return Psycho
+     */
+    public function setImage1($image1)
+    {
+        $this->image1 = $image1;
+
+        return $this;
+    }
+
+    /**
+     * Get image1
+     *
+     * @return string 
+     */
+    public function getImage1()
+    {
+        return $this->image1;
+    }
+
+    /**
+     * Set image2
+     *
+     * @param string $image2
+     * @return Psycho
+     */
+    public function setImage2($image2)
+    {
+        $this->image2 = $image2;
+
+        return $this;
+    }
+
+    /**
+     * Get image2
+     *
+     * @return string 
+     */
+    public function getImage2()
+    {
+        return $this->image2;
+    }
+
+    /**
+     * Set image3
+     *
+     * @param string $image3
+     * @return Psycho
+     */
+    public function setImage3($image3)
+    {
+        $this->image3 = $image3;
+
+        return $this;
+    }
+
+    /**
+     * Get image3
+     *
+     * @return string 
+     */
+    public function getImage3()
+    {
+        return $this->image3;
+    }
+
+    /**
+     * Set image4
+     *
+     * @param string $image4
+     * @return Psycho
+     */
+    public function setImage4($image4)
+    {
+        $this->image4 = $image4;
+
+        return $this;
+    }
+
+    /**
+     * Get image4
+     *
+     * @return string 
+     */
+    public function getImage4()
+    {
+        return $this->image4;
+    }
+
+    /**
+     * Set image5
+     *
+     * @param string $image5
+     * @return Psycho
+     */
+    public function setImage5($image5)
+    {
+        $this->image5 = $image5;
+
+        return $this;
+    }
+
+    /**
+     * Get image5
+     *
+     * @return string 
+     */
+    public function getImage5()
+    {
+        return $this->image5;
+    }
+    /**
+     * @ORM\PrePersist
+     */
+    public function preUpload()
+    {
+        // Add your code here
+    }
+
+    /**
+     * @ORM\PostPersist
+     */
+    public function upload()
+    {
+        // Add your code here
+    }
+
+    /**
+     * @ORM\PostRemove
+     */
+    public function removeUpload()
+    {
+        // Add your code here
     }
 }

@@ -60,18 +60,10 @@
                 <li>
                     <div>
                         <a href="#Psychomotricité">
-                            <!-- <img src="http://www.designchemical.com/lab/jquery/demo/images/section_1.png"></img>
-                <h2>Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> -->
                             <div>
                                 <h2 class="psyco_titre1"> {{ psycho.titledef }}</h2>
-                                <img class="psyco_img1" src="{{asset('bundles/psychomot/img/2Psychomotricite.jpg')}}">
+                                <img src="{{ app.request.basepath }}/uploads/{{ psycho.image1 }}">
                                 <p class="psyco_texte1"> {{ psycho.txtdef }} </p>
-                            </div>
-                            <div>
-                                <!-- <img class="psyco_img1" src="./img/SAM_2242-500_375.JPG"> -->
-
-                                <!-- <img class="psyco_img1" src="{{asset('bundles/psychomot/img/2Psychomotricite.jpg')}}"> -->
                             </div>
                         </a>
                     </div>
@@ -80,7 +72,7 @@
                     <div>
                         <a href="#Psychomotricité">
                             <h2>{{ psycho.titleWho }}</h2>
-                            <img class="psyco_img1" src="{{asset('bundles/psychomot/img/3Pourqui.jpg')}}">
+                            <img src="{{ app.request.basepath }}/uploads/{{ psycho.image2 }}">
                             <p>{{ psycho.txtWho }}</p>
                         </a>
                     </div>
@@ -89,11 +81,11 @@
                     <div>
                         <a href="#Psychomotricité">
                             <h2>{{ psycho.titleWhy }}</h2>
-                            <img class="psyco_img1" src="{{asset('bundles/psychomot/img/4Pourquoi.jpg')}}">
-                            <p>{{ psycho.txtWhy }}
-                            </p>
+                            <img src="{{ app.request.basepath }}/uploads/{{ psycho.image3 }}">
+                            <p>{{ psycho.txtWhy }}</p>
                         </a>
                     </div>
+
                 </li>
             </ul>
         </div>
@@ -110,7 +102,7 @@
         <div id="psychomot" class="fond">
             <div class="left col-xs-12 col-sm-6 col-md-6">
                 <div class="col-xs-12">
-                    <img src="{{asset('bundles/psycho/img/Psy2.jpg') }}" alt="Margaux Charrier" />
+                    <img src="{{ app.request.basepath }}/uploads/{{ psycho.image4 }}">
                     <div class="border">
                         <h3>{{ psycho.namePsy1 }}</h3>
                         <h5>Psychomotricienne diplomée</h5>
@@ -120,7 +112,7 @@
             </div>
             <div class="right col-xs-12 col-sm-6 col-md-6">
                 <div class="col-xs-12">
-                    <img src="{{asset('bundles/psycho/img/Psy1.jpg') }}" alt="Adeline Florentin" />
+                    <img src="{{ app.request.basepath }}/uploads/{{ psycho.image5 }}">
                     <div class="border">
                         <h3>{{ psycho.namePsy2 }}</h3>
                         <h5>Psychomotricienne diplomée</h5>
