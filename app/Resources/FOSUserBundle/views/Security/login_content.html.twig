@@ -5,6 +5,9 @@
         .btn-success{
             background-color: #82bdb5;
         }
+        .card-img-top{
+            margin-bottom: 25px;
+        }
     </style>
 {% endblock %}
 
@@ -12,7 +15,7 @@
     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 {% endif %}
 <div class="card col-xs-offset-4 col-xs-4">
-    <img class="card-img-top col-xs-5" src="{{ asset('bundles/psycho/img/logo250.jpg') }}" alt="Card image cap">
+    <img class="card-img-top col-xs-offset-2 col-xs-8" src="{{ asset('bundles/psycho/img/logo250.png') }}" alt="Card image cap">
     <div class="card-block col-xs-12">
         <form action="{{ path("fos_user_security_check") }}" method="post">
             {% if csrf_token %}
