@@ -55,15 +55,6 @@
 
 
 
-/*--PAGE HOME--*/
-
-
-/*--FIN PAGE HOME--*/
-
-
-
-
-
 body {
     margin-top:0;
 
@@ -81,6 +72,7 @@ body {
 #Psychomotricité {
     max-width: 25000px;
     height: auto;
+    padding-right: 50px;
     padding-bottom: 50px;
     background-color: #82BDB5;
 }
@@ -99,6 +91,8 @@ body {
 #Psychomotricité p {
     padding-top: 10px;
     color: #ffffff;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 #Psychomotricité img{
@@ -157,6 +151,10 @@ body {
     color: #82BDB5;
 }
 
+.titrePsycholog {
+    margin-right:40px;
+    margin-left:40px;
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -178,14 +176,60 @@ body {
 
 /*--FIN PSYCHOMOTRICIENNES--*/
 
-#consultation p {
-    width: 1000px;
-    height: 800px;
-}
+
 
 
 
 /*--DEBUT INTERVENTION--*/
+
+#consultation {
+    max-width: 25000px;
+    height: auto;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    background-color: #82BDB5;
+}
+
+#consultation h2 {
+    text-decoration: none;
+    color: #ffffff;
+    padding-top: 10px;
+    font-size: 1.8em;
+}
+
+#consultation h2:hover {
+    text-decoration: none;
+}
+
+#consultation p {
+    padding-top: 10px;
+    color: #ffffff;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#consultation img{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+/*
+#consultation {
+    color: #000000;
+}
+
+#consultation p {
+    width: 1200px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align: justify;
+    text-justify: inter-word;
+}*/
+
 
 
 
@@ -200,8 +244,12 @@ body {
 
 #page-contact {
     padding-top: 70px;
+    padding-bottom: 70px;
+}
 
-    margin-left: 2%;
+.essai1{
+    padding-bottom: 20px;
+    margin-left:100px;
 }
 
 #page-contact p, #page-contact h3 {
@@ -214,22 +262,16 @@ body {
 
 #page-contact h3 {
     background-color: white;
-    margin: -15px 120px 0 120px;
+    margin: -15px 120px 0px 120px;
     color: #82BDB5;
 }
 
 .contact {
     border: 5px solid #82BDB5;
-    margin: 20px 20px 0 30px;
 }
 
 .send {
     margin-bottom: 10px;
-}
-
-
-.essai1{
-    margin-left: 35px;
 }
 
 .message{
@@ -238,11 +280,6 @@ body {
 
 .formulaire, .adress {
     margin-top: 40px;
-}
-
-.map{
-    margin-top: 95px;
-    margin-left: 60px;
 }
 
 @media screen and (max-width: 1300px) {

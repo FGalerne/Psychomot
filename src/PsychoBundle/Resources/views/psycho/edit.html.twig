@@ -15,8 +15,6 @@
     <!-- Début Nav Bar -->
 
     <nav class="navbar navbar-default navbar-fixed-top">
-        <!--<div class="container">-->
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -27,7 +25,6 @@
             <a class="navbar-brand" href="#">Logo</a>
 
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav ">
                 <li class="active"><a class="js-scrollTo" href="#page-home">Accueil <span class="sr-only">(current)</span></a></li>
@@ -47,11 +44,8 @@
 
     <!-- Fin Nav Bar -->
 
-
     <br/><br/>
     <br/><br/>
-
-
 
     <!--Début Psychomotricité-->
 
@@ -60,76 +54,58 @@
             <ul>
                 <li>
                     <div>
+                        <h2 class="psyco_titre1">{{ psycho.titledef }}</h2>
+                        {{ form_widget(form.titledef, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.titledef) }}
 
-
-                            <div>
-                                <h2 class="psyco_titre1">-- Titre 1 --<br/> {{ psycho.titledef }}</h2>
-                                {{ form_widget(form.titledef, {'attr': {'class': 'form-control'}}) }}
-                                {{ form_errors(form.titledef) }}
-
-                                <p class="psyco_texte1">-- Texte 1 --<br/> {{ psycho.txtdef }} </p>
-                                {{ form_widget(form.txtdef, {'attr': {'class': 'form-control'}}) }}
-                                {{ form_errors(form.txtdef) }}
-
-                            </div>
-                            <div>
-                                <img src="{{ app.request.basepath }}/uploads/{{ psycho.image1 }}">
-                                {#{{form.children.file1.vars.label}}#}
-                                {{ form_widget(form.file1) }}
-                                {{ form_errors(form.file1) }}
-                            </div>
-
+                        <p class="psyco_texte1">{{ psycho.txtdef }} </p>
+                        {{ form_widget(form.txtdef, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.txtdef) }}
+                    </div>
+                    <div>
+                        <img src="{{ app.request.basepath }}/uploads/{{ psycho.image1 }}">
+                        {#{{form.children.file1.vars.label}}#}
+                        {{ form_widget(form.file1) }}
+                        {{ form_errors(form.file1) }}
                     </div>
                 </li>
                 <li>
                     <div>
+                        <h2>{{ psycho.titleWho }}</h2>
+                        {{ form_widget(form.titleWho, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.titleWho) }}
 
-                            <div>
-                                <h2>-- Titre 2 --<br/> {{ psycho.titleWho }}</h2>
-                                {{ form_widget(form.titleWho, {'attr': {'class': 'form-control'}}) }}
-                                {{ form_errors(form.titleWho) }}
-
-
-                                <p>-- Texte 2 --<br/> {{ psycho.txtWho }}</p>
-                                {{ form_widget(form.txtWho, {'attr': {'class': 'form-control'}}) }}
-                                {{ form_errors(form.txtWho) }}
-
-                            </div>
-                            <div>
-                                <img src="{{ app.request.basepath }}/uploads/{{ psycho.image2 }}">
-                                {{form.children.file2.vars.label}}
-                                {{ form_widget(form.file2) }}
-                                {{ form_errors(form.file2) }}
-                            </div>
-
+                        <p>{{ psycho.txtWho }}</p>
+                        {{ form_widget(form.txtWho, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.txtWho) }}
                     </div>
+                    <img src="{{ app.request.basepath }}/uploads/{{ psycho.image2 }}">
+                    {{form.children.file2.vars.label}}
+                    {{ form_widget(form.file2) }}
+                    {{ form_errors(form.file2) }}
                 </li>
                 <li>
                     <div>
+                        <h2>{{ psycho.titleWhy }}</h2>
+                        {{ form_widget(form.titleWhy, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.titleWhy) }}
 
-                            <div>
-                                <h2>-- Titre 3 --<br/> {{ psycho.titleWhy }}</h2>
-                                {{ form_widget(form.titleWhy, {'attr': {'class': 'form-control'}}) }}
-                                {{ form_errors(form.titleWhy) }}
-
-
-                                <p>-- Texte 3 --<br/> {{ psycho.txtWhy }}</p>
-                                {{ form_widget(form.txtWhy, {'attr': {'class': 'form-control'}}) }}
-                                {{ form_errors(form.txtWhy) }}
-
-                            </div>
-                            <div>
-                                <img src="{{ app.request.basepath }}/uploads/{{ psycho.image3 }}">
-                                {{form.children.file3.vars.label}}
-                                {{ form_widget(form.file3) }}
-                                {{ form_errors(form.file3) }}
-                            </div>
-
+                        <p>{{ psycho.txtWhy }}</p>
+                        {{ form_widget(form.txtWhy, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.txtWhy) }}
+                    </div>
+                    <div>
+                        <img src="{{ app.request.basepath }}/uploads/{{ psycho.image3 }}">
+                        {{form.children.file3.vars.label}}
+                        {{ form_widget(form.file3) }}
+                        {{ form_errors(form.file3) }}
                     </div>
                 </li>
             </ul>
         </div>
     </div>
+    <br/>
+    <br/>
 
     <!--Fin Psychomotricité-->
 
@@ -141,14 +117,13 @@
     <div class="row">
         <div id="psychomot">
             <H3>{{ psycho.titlePsy }}</H3>
-            <div>
+            <div class="titrePsycholog">
                 {{ form_widget(form.titlePsy, {'attr': {'class': 'form-control'}}) }}
                 {{ form_errors(form.titlePsy) }}
             </div>
             <div class="fond">
                 <div class="left col-xs-12 col-sm-6 col-md-6">
                     <div class="col-xs-12">
-
                         <div>
                             <img src="{{ app.request.basepath }}/uploads/{{ psycho.image4 }}">
                             {{form.children.file4.vars.label}}
@@ -204,65 +179,42 @@
 
     <!--Début Intervention-->
 
-    <div class="row">
         <div id="consultation">
-            <div class="accordion col-xs-12">
+            <div class="accordion">
                 <ul>
                     <li>
                         <div>
-                            <!--<img src="img/essais1.jpg">-->
-                            <a>
-                                <div class="row">
-                                    <div class="accordion col-xs-4">
-                                        <h2>{{ psycho.titleConsult }}</h2>
-                                        {{ form_widget(form.titleConsult, {'attr': {'class': 'form-control'}}) }}
-                                        {{ form_errors(form.titleConsult) }}
-                                        <p>{{ psycho.txtConsult }}</p>
-                                        {{ form_widget(form.txtConsult, {'attr': {'class': 'form-control'}}) }}
-                                        {{ form_errors(form.txtConsult) }}
-                                    </div>
-                                </div>
-                            </a>
+                            <h2>{{ psycho.titleConsult }}</h2>
+                            {{ form_widget(form.titleConsult, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_errors(form.titleConsult) }}
+                            <p>{{ psycho.txtConsult }}</p>
+                            {{ form_widget(form.txtConsult, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_errors(form.txtConsult) }}
                         </div>
                     </li>
                     <li>
                         <div>
-                            <!-- <img src="img/essais2.jpg">-->
-                            <a>
-                                <div class="row">
-                                    <div class="accordion col-xs-4">
-                                        <h2>{{ psycho.titleInterv }}</h2>
-                                        {{ form_widget(form.titleInterv, {'attr': {'class': 'form-control'}}) }}
-                                        {{ form_errors(form.titleInterv) }}
-                                        <p>{{ psycho.txtInterv }}</p>
-                                        {{ form_widget(form.txtInterv, {'attr': {'class': 'form-control'}}) }}
-                                        {{ form_errors(form.txtInterv) }}
-                                    </div>
-                                </div>
-                            </a>
+                            <h2>{{ psycho.titleInterv }}</h2>
+                            {{ form_widget(form.titleInterv, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_errors(form.titleInterv) }}
+                            <p>{{ psycho.txtInterv }}</p>
+                            {{ form_widget(form.txtInterv, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_errors(form.txtInterv) }}
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <!--<img src="img/essais3.jpg">-->
-                            <a>
-                                <div class="row">
-                                    <div class="accordion col-xs-4">
-                                        <h2>{{ psycho.titleBilan }}</h2>
-                                        {{ form_widget(form.titleBilan, {'attr': {'class': 'form-control'}}) }}
-                                        {{ form_errors(form.titleBilan) }}
-                                        <p>{{ psycho.txtBilan }}</p>
-                                        {{ form_widget(form.txtBilan, {'attr': {'class': 'form-control'}}) }}
-                                        {{ form_errors(form.txtBilan) }}
-                                    </div>
-                                </div>
-                            </a>
+                       <div>
+                           <h2>{{ psycho.titleBilan }}</h2>
+                           {{ form_widget(form.titleBilan, {'attr': {'class': 'form-control'}}) }}
+                           {{ form_errors(form.titleBilan) }}
+                           <p>{{ psycho.txtBilan }}</p>
+                           {{ form_widget(form.txtBilan, {'attr': {'class': 'form-control'}}) }}
+                           {{ form_errors(form.txtBilan) }}
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
-    </div>
 
     <!--Fin Intervention-->
 
@@ -292,43 +244,17 @@
                         {{ form_errors(form.contactTel) }}
                     </div>
                 </div>
-                <div class="formulaire">
-                    <div class="form-group row">
-                        <label for="example-text-input" class="col-xs-3 col-form-label">Nom :</label>
-                        <div class="col-xs-9">
-                            <input class="form-control" type="text" value="ex : Doe" id="example-text-input">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="example-text-input" class="col-xs-3 col-form-label">Prénom :</label>
-                        <div class="col-xs-9">
-                            <input class="form-control" type="text" value="ex : John" id="example-text-input">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="example-email-input" class="col-xs-3 col-form-label">Email :</label>
-                        <div class="col-xs-9">
-                            <input class="form-control" type="email" value="john.doe@free.fr" id="example-email-input">
-                        </div>
-                    </div>
-                    <div class="form-group ">
-                        <label for="exampleTextarea" >Votre message :</label>
-                        <textarea class="form-control" id="exampleTextarea" rows="10"></textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="map col-xs-12 col-sm-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2668.900152456399!2d0.1456287153106367!3d48.015638879213896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e286137f09c6d3%3A0x2ebd30be841e5f73!2s38+Rue+Arnold+Dolmetsch%2C+72000+Le+Mans!5e0!3m2!1sfr!2sfr!4v1476182827751" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
-
+    <br/>
+    <br/>
     <!--Fin Contact-->
 
 
 
 
-
+   {# <br/>
     <li>
         <a href="{{ path('psycho_index') }}">Back to the list</a>
     </li>
@@ -339,7 +265,7 @@
 
     {{ form_start(delete_form) }}
     <input type="submit" value="Delete">
-    {{ form_end(delete_form) }}
+    {{ form_end(delete_form) }}#}
 
 
 
