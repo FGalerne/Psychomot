@@ -60,7 +60,7 @@
             <ul>
                 <li>
                     <div>
-                        <a>
+
 
                             <div>
                                 <h2 class="psyco_titre1">-- Titre 1 --<br/> {{ psycho.titledef }}</h2>
@@ -78,12 +78,12 @@
                                 {{ form_widget(form.file1) }}
                                 {{ form_errors(form.file1) }}
                             </div>
-                        </a>
+
                     </div>
                 </li>
                 <li>
                     <div>
-                        <a>
+
                             <div>
                                 <h2>-- Titre 2 --<br/> {{ psycho.titleWho }}</h2>
                                 {{ form_widget(form.titleWho, {'attr': {'class': 'form-control'}}) }}
@@ -101,12 +101,12 @@
                                 {{ form_widget(form.file2) }}
                                 {{ form_errors(form.file2) }}
                             </div>
-                        </a>
+
                     </div>
                 </li>
                 <li>
                     <div>
-                        <a>
+
                             <div>
                                 <h2>-- Titre 3 --<br/> {{ psycho.titleWhy }}</h2>
                                 {{ form_widget(form.titleWhy, {'attr': {'class': 'form-control'}}) }}
@@ -124,7 +124,7 @@
                                 {{ form_widget(form.file3) }}
                                 {{ form_errors(form.file3) }}
                             </div>
-                        </a>
+
                     </div>
                 </li>
             </ul>
@@ -285,11 +285,6 @@
                     <div>
                         {{ form_widget(form.contactAddress, {'attr': {'class': 'form-control'}}) }}
                         {{ form_errors(form.contactAddress) }}
-                    </div>
-                    <p>{{ psycho.contactMail }}</p>
-                    <div>
-                        {{ form_widget(form.contactMail, {'attr': {'class': 'form-control'}}) }}
-                        {{ form_errors(form.contactMail) }}
                     </div>
                     <p>{{ psycho.contactTel }}</p>
                     <div>

@@ -11,19 +11,17 @@ PsychoBundle\Entity\Psycho:
     fields:
         tel:
             type: string
-            length: '14'
+            length: 14
         titledef:
             type: string
             length: 255
         txtdef:
-            type: string
-            length: '900'
+            type: text
         titleWho:
             type: string
             length: 255
         txtWho:
-            type: string
-            length: '4000'
+            type: text
         titleWhy:
             type: string
             length: 255
