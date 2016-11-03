@@ -61,9 +61,6 @@ PsychoBundle\Entity\Psycho:
         contactAddress:
             type: string
             length: 255
-        contactMail:
-            type: string
-            length: 255
         contactTel:
             type: string
             length: 255

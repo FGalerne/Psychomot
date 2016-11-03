@@ -43,7 +43,6 @@ class PsychoType extends AbstractType
             ->add('namePsy1')
             ->add('namePsy2')
             ->add('contactAddress')
-            ->add('contactMail')
             ->add('contactTel')
             ->add('contactName');
 

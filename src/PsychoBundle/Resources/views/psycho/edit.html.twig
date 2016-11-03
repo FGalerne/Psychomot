@@ -81,6 +81,8 @@
                         {#{{form.children.file1.vars.label}}#}
                         {{ form_widget(form.file1) }}
                         {{ form_errors(form.file1) }}
+                        {{ form_widget(form.image1) }}
+                        {{ form_errors(form.image1) }}
                     </div>
                 </li>
                 <li id="who">
@@ -97,6 +99,8 @@
                     {{form.children.file2.vars.label}}
                     {{ form_widget(form.file2) }}
                     {{ form_errors(form.file2) }}
+                    {{ form_widget(form.image2) }}
+                    {{ form_errors(form.image2) }}
                 </li>
                 <li id="why">
                     <div>
@@ -113,6 +117,8 @@
                         {{form.children.file3.vars.label}}
                         {{ form_widget(form.file3) }}
                         {{ form_errors(form.file3) }}
+                        {{ form_widget(form.image3) }}
+                        {{ form_errors(form.image3) }}
                     </div>
                 </li>
             </ul>
@@ -143,6 +149,8 @@
                             {{form.children.file4.vars.label}}
                             {{ form_widget(form.file4) }}
                             {{ form_errors(form.file4) }}
+                            {{ form_widget(form.image4) }}
+                            {{ form_errors(form.image4) }}
                         </div>
                         <div class="border">
                             <h3>{{ psycho.namePsy1 }}</h3>
@@ -166,6 +174,8 @@
                             {{form.children.file5.vars.label}}
                             {{ form_widget(form.file5) }}
                             {{ form_errors(form.file5) }}
+                            {{ form_widget(form.image5) }}
+                            {{ form_errors(form.image5) }}
                         </div>
                         <div class="border">
                             <h3>{{ psycho.namePsy2 }}</h3>
@@ -268,18 +278,25 @@
 
 
 
-    <br/>
-    <li>
-        <a href="{{ path('psycho_index') }}">Back to the list</a>
-    </li>
+    <div class="row">
+        <div class="col-xs-2">
+            <li>
+                <a href="{{ path('psycho_index') }}">Back to the list</a>
+            </li>
+        </div>
 
-    {{ psycho.image }}
-    <input type="submit" value="Edit" />
-    {{ form_end(form) }}
+        <div class="col-xs-1">
+            {{ psycho.image }}
+            <input type="submit" value="Edit" />
+            {{ form_end(form) }}
+        </div>
 
-    {{ form_start(delete_form) }}
-    <input type="submit" value="Delete">
-    {{ form_end(delete_form) }}
+        <div class="col-xs-1">
+            {{ form_start(delete_form) }}
+            <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </div>
+    </div>
 
 
 
