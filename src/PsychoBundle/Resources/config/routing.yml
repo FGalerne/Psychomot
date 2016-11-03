@@ -1,6 +1,6 @@
 psycho_psycho:
     resource: "@PsychoBundle/Resources/config/routing/psycho.yml"
-    prefix:   /psycho
+    prefix:   /
 
 psycho_homepage:
     path:     /
