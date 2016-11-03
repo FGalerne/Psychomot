@@ -14,6 +14,7 @@
 
     <!-- Début Nav Bar -->
 
+
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -65,78 +66,114 @@
 
     <div id="Psychomotricité">
         <div class="accordion1">
-            <ul>
-                <li>
-                    <div id="Psychomotricité">
-                        <h2 class="psyco_titre1">{{ psycho.titledef }}</h2>
-                        {{ form_widget(form.titledef, {'attr': {'class': 'form-control'}}) }}
-                        {{ form_errors(form.titledef) }}
 
-                        <p class="psyco_texte1">{{ psycho.txtdef }} </p>
-                        {{ form_widget(form.txtdef, {'attr': {'class': 'form-control'}}) }}
-                        {{ form_errors(form.txtdef) }}
+                <h2 class="psyco_titre1">{{ psycho.titledef }}</h2>
+                <div class="col-xs-offset-4 col-xs-4">
+                    <p class=>{{ form_widget(form.titledef, {'attr': {'class': 'form-control'}}) }}
+                    {{ form_errors(form.titledef) }}</p>
+                </div>
+
+                <p class="psyco_texte1 col-xs-12">{{ psycho.txtdef }} </p>
+
+                <div class="col-xs-offset-1 col-xs-10">
+                    {{ form_widget(form.txtdef, {'attr': {'class': 'form-control'}}) }}
+                    {{ form_errors(form.txtdef) }}
+                </div>
+            </div>
+            <div class="row">
+                <img src="{{ app.request.basepath }}/uploads/{{ psycho.image1 }}" class="img col-xs-6">
+                <div class="col-xs-6">
+                    <div class="form-group row photo">
+                        <label for="example-text-input" class="form-label col-xs-4">Nom de la photo :</label>
+                        <div class="col-xs-8">
+                            {{ form_widget(form.image1, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_errors(form.image1) }}
+                        </div>
                     </div>
-                    <div>
-                        <img src="{{ app.request.basepath }}/uploads/{{ psycho.image1 }}">
-                        {#{{form.children.file1.vars.label}}#}
-                        {{ form_widget(form.file1) }}
-                        {{ form_errors(form.file1) }}
-                        {{ form_widget(form.image1) }}
-                        {{ form_errors(form.image1) }}
-                    </div>
-                </li>
-                <li id="who">
-                    <div>
-                        <h2>{{ psycho.titleWho }}</h2>
+
+
+                </div>
+                <div class="col-xs-6">
+                    {{ form_widget(form.file1) }}
+                    {{ form_errors(form.file1) }}
+                </div>
+
+            </div>
+
+            <div id="who">
+                <div>
+                    <h2 class="psyco_titre1">{{ psycho.titleWho }}</h2>
+                    <div class="col-xs-offset-4 col-xs-4">
                         {{ form_widget(form.titleWho, {'attr': {'class': 'form-control'}}) }}
                         {{ form_errors(form.titleWho) }}
+                    </div>
 
-                        <p>{{ psycho.txtWho }}</p>
+                    <p class="psyco_texte1 col-xs-12">{{ psycho.txtWho }}</p>
+                    <div class="col-xs-offset-1 col-xs-10">
                         {{ form_widget(form.txtWho, {'attr': {'class': 'form-control'}}) }}
                         {{ form_errors(form.txtWho) }}
                     </div>
-                    <img src="{{ app.request.basepath }}/uploads/{{ psycho.image2 }}">
-                    {{form.children.file2.vars.label}}
-                    {{ form_widget(form.file2) }}
-                    {{ form_errors(form.file2) }}
-                    {{ form_widget(form.image2) }}
-                    {{ form_errors(form.image2) }}
-                </li>
-                <li id="why">
-                    <div>
-                        <h2>{{ psycho.titleWhy }}</h2>
+                </div>
+                <div class="row">
+                    <img src="{{ app.request.basepath }}/uploads/{{ psycho.image1 }}" class="img col-xs-6">
+                    <div class="col-xs-6">
+                        <div class="form-group row photo">
+                            <label for="example-text-input" class="form-label col-xs-4">Nom de la photo :</label>
+                            <div class="col-xs-8">
+                                {{ form_widget(form.image2, {'attr': {'class': 'form-control'}}) }}
+                                {{ form_errors(form.image2) }}
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-xs-6">
+                        {{ form_widget(form.file2) }}
+                        {{ form_errors(form.file2) }}
+                    </div>
+
+                </div>
+            <div id="why">
+                <div>
+                    <h2 class="psyco_titre1">{{ psycho.titleWhy }}</h2>
+                    <div class="col-xs-offset-4 col-xs-4">
                         {{ form_widget(form.titleWhy, {'attr': {'class': 'form-control'}}) }}
                         {{ form_errors(form.titleWhy) }}
+                    </div>
 
-                        <p>{{ psycho.txtWhy }}</p>
+                    <p class="psyco_texte1 col-xs-12">{{ psycho.txtWhy }}</p>
+                    <div class="col-xs-offset-1 col-xs-10">
                         {{ form_widget(form.txtWhy, {'attr': {'class': 'form-control'}}) }}
                         {{ form_errors(form.txtWhy) }}
                     </div>
-                    <div>
-                        <img src="{{ app.request.basepath }}/uploads/{{ psycho.image3 }}">
-                        {{form.children.file3.vars.label}}
+                </div>
+                <div class="row">
+                    <img src="{{ app.request.basepath }}/uploads/{{ psycho.image1 }}" class="img col-xs-6">
+                    <div class="col-xs-6">
+                        <div class="form-group row photo">
+                            <label for="example-text-input" class="form-label col-xs-4">Nom de la photo :</label>
+                            <div class="col-xs-8">
+                                {{ form_widget(form.image3, {'attr': {'class': 'form-control'}}) }}
+                                {{ form_errors(form.image3) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
                         {{ form_widget(form.file3) }}
                         {{ form_errors(form.file3) }}
-                        {{ form_widget(form.image3) }}
-                        {{ form_errors(form.image3) }}
                     </div>
-                </li>
-            </ul>
+
+                </div>
         </div>
     </div>
-    <br/>
-    <br/>
 
     <!--Fin Psychomotricité-->
-
-
-
 
     <!--Début Psychomotriciennes-->
 
     <div class="row">
         <div id="psychomot">
-            <H3>{{ psycho.titlePsy }}</H3>
+            <h3>{{ psycho.titlePsy }}</h3>
             <div class="titrePsycholog">
                 {{ form_widget(form.titlePsy, {'attr': {'class': 'form-control'}}) }}
                 {{ form_errors(form.titlePsy) }}
@@ -145,7 +182,7 @@
                 <div class="left col-xs-12 col-sm-6 col-md-6">
                     <div class="col-xs-12">
                         <div>
-                            <img src="{{ app.request.basepath }}/uploads/{{ psycho.image4 }}">
+                            <img src="{{ app.request.basepath }}/uploads/{{ psycho.image4 }}"/>
                             {{form.children.file4.vars.label}}
                             {{ form_widget(form.file4) }}
                             {{ form_errors(form.file4) }}
@@ -170,7 +207,7 @@
                 <div class="right col-xs-12 col-sm-6 col-md-6">
                     <div class="col-xs-12">
                         <div>
-                            <img src="{{ app.request.basepath }}/uploads/{{ psycho.image5 }}">
+                            <img src="{{ app.request.basepath }}/uploads/{{ psycho.image5 }}"/>
                             {{form.children.file5.vars.label}}
                             {{ form_widget(form.file5) }}
                             {{ form_errors(form.file5) }}

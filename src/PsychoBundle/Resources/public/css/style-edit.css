@@ -1,5 +1,7 @@
 /*--DEBUT NAVBAR--*/
-
+.container-fluid{
+    padding: 0;
+}
 .navbar-default {
     background-color: #82bdb5;
     font-size: 1.2em;
@@ -55,18 +57,19 @@
 }
 /*--FIN NAVBAR--*/
 
-
-
-
-
 body {
     margin-top:0;
-
 }
 
+/*--IMAGE--*/
 
-
-
+.img{
+    width: 25%;
+    margin-left: 25px;
+}
+.photo{
+    margin-top: 150px;
+}
 
 /*--DEBUT PSYCHOMOTRICITE--*/
 
@@ -74,10 +77,7 @@ body {
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700);
 
 #Psychomotricité {
-    max-width: 25000px;
-    height: auto;
-    padding-right: 50px;
-    padding-bottom: 50px;
+
     background-color: #82BDB5;
 }
 
@@ -104,17 +104,22 @@ body {
     padding-bottom: 20px;
 }
 
-
-
-
+.psyco_texte1{
+    padding: 25px 25px 25px 25px;
+    text-align: justify;
+}
+.psyco_titre1{
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+}
 
 /*--FIN PSYCHOMOTRICITE--*/
-
 
 /*--DEBUT PSYCHOMOTRICIENNES--*/
 
 #psychomot {
     height: auto;
+
 }
 
 .left, .right {
@@ -179,10 +184,6 @@ body {
 }
 
 /*--FIN PSYCHOMOTRICIENNES--*/
-
-
-
-
 
 /*--DEBUT INTERVENTION--*/
 
@@ -281,8 +282,6 @@ body {
     }
 }
 
-
-
 /*FIN CONTACT*/
 
 /*--DEBUT FOOTER--*/
@@ -379,7 +378,6 @@ footer{
     height: 15em;
     margin-top:20px;
 }
-
 
 /*--FIN FOOTER--*/
 

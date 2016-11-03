@@ -1,5 +1,7 @@
 /*--DEBUT NAVBAR--*/
-
+.container-fluid{
+    padding: 0;
+}
 .navbar-default {
     background-color: #82bdb5;
     font-size: 1.2em;
