@@ -87,7 +87,6 @@ MISE EN PLACE
 -> cd Psychomot/
 -> composer install
 -> php app/console doctrine:database:create
--> composer install
 -> php app/console assets:install --symlink
 -> php app/console doctrine:schema:update --force
 -> php app/console cache:clear
