@@ -55,9 +55,6 @@ PsychoBundle\Entity\Psycho:
         namePsy2:
             type: string
             length: 255
-        contactAdr:
-            type: string
-            length: 255
         contactAddress:
             type: string
             length: 255
@@ -65,9 +62,6 @@ PsychoBundle\Entity\Psycho:
             type: string
             length: 255
         contactName:
-            type: string
-            length: 255
-        image:
             type: string
             length: 255
         image1:
