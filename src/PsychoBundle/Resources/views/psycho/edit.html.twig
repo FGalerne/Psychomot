@@ -22,14 +22,29 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="{{ asset('bundles/psycho/img/logo.png') }}" alt="Logo psychomotricienne" class="logo-navbar"/> </a>
+            <a class="navbar-brand"><img src="{{ asset('bundles/psycho/img/logo.png') }}" class= "" alt="Logo psychomotricienne"/> </a>
+
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav ">
                 <li class="active"><a class="js-scrollTo" href="#page-home">Accueil <span class="sr-only">(current)</span></a></li>
-                <li><a class="js-scrollTo" href="#Psychomotricité">Psychomotricité</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Psychomotricité<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="js-scrollTo" href="#Psychomotricité">La psychomotricité</a></li>
+                        <li><a class="js-scrollTo" href="#who">Pour Qui?</a></li>
+                        <li><a class="js-scrollTo" href="#why">Pour Quoi?</a></li>
+                    </ul>
+                </li>
                 <li><a class="js-scrollTo" href="#psychomot">Les psychomotriciennes</a></li>
-                <li><a class="js-scrollTo" href="#consultation">Interventions</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Consultations<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="js-scrollTo" href="#consultation">Les consultations</a></li>
+                        <li><a class="js-scrollTo" href="#atelier">Atelier de prevention</a></li>
+                        <li><a class="js-scrollTo" href="#bilan">Bilan et tarifs</a></li>
+                    </ul>
+                </li>
                 <li><a class="js-scrollTo" href="#page-contact">Contact</a></li>
                 <li><input type="submit" value="Mise à jour" class="MiseAJour"/></li>
                 <a class="telephone" >{{ psycho.tel }}</a>
@@ -52,7 +67,7 @@
         <div class="accordion1">
             <ul>
                 <li>
-                    <div>
+                    <div id="Psychomotricité">
                         <h2 class="psyco_titre1">{{ psycho.titledef }}</h2>
                         {{ form_widget(form.titledef, {'attr': {'class': 'form-control'}}) }}
                         {{ form_errors(form.titledef) }}
@@ -68,7 +83,7 @@
                         {{ form_errors(form.file1) }}
                     </div>
                 </li>
-                <li>
+                <li id="who">
                     <div>
                         <h2>{{ psycho.titleWho }}</h2>
                         {{ form_widget(form.titleWho, {'attr': {'class': 'form-control'}}) }}
@@ -83,7 +98,7 @@
                     {{ form_widget(form.file2) }}
                     {{ form_errors(form.file2) }}
                 </li>
-                <li>
+                <li id="why">
                     <div>
                         <h2>{{ psycho.titleWhy }}</h2>
                         {{ form_widget(form.titleWhy, {'attr': {'class': 'form-control'}}) }}
@@ -191,7 +206,7 @@
                             {{ form_errors(form.txtConsult) }}
                         </div>
                     </li>
-                    <li>
+                    <li id="atelier">
                         <div>
                             <h2>{{ psycho.titleInterv }}</h2>
                             {{ form_widget(form.titleInterv, {'attr': {'class': 'form-control'}}) }}
@@ -201,7 +216,7 @@
                             {{ form_errors(form.txtInterv) }}
                         </div>
                     </li>
-                    <li>
+                    <li id="bilan">
                        <div>
                            <h2>{{ psycho.titleBilan }}</h2>
                            {{ form_widget(form.titleBilan, {'attr': {'class': 'form-control'}}) }}
@@ -253,7 +268,7 @@
 
 
 
-   {# <br/>
+    <br/>
     <li>
         <a href="{{ path('psycho_index') }}">Back to the list</a>
     </li>
@@ -264,7 +279,7 @@
 
     {{ form_start(delete_form) }}
     <input type="submit" value="Delete">
-    {{ form_end(delete_form) }}#}
+    {{ form_end(delete_form) }}
 
 
 

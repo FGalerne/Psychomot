@@ -5,8 +5,7 @@ namespace PsychoBundle\Controller;
 use PsychoBundle\Entity\Psycho;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-
-use PsychomotBundle\Form\PsychomotType;
+use PsychoBundle\Form\PsychoType;
 
 /**
  * Psycho controller.
