@@ -27,7 +27,10 @@
     background-color: #518e86;
 
 }
+.logo-navbar{
 
+    margin-top: -13px;
+}
 .tel{
     margin-right: 20px;
 
@@ -805,4 +808,6 @@ footer{
 
 
 /*--FIN FOOTER--*/
+
+/*-- MAIL ENVOYE --*/
 

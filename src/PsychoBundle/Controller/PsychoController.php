@@ -137,9 +137,10 @@ class PsychoController extends Controller
             $message = \Swift_Message::newInstance('Test')
                 ->setSubject($subject)
                 ->setFrom(array('psychomot72@gmail.com' =>'Site internet'))
-                ->setTo(array('mcharrier.psychomot@gmail.com', 'aflorentin.psychomot@gmail.com'))
+                ->setTo(array('florian.galerne@free.fr'))
                 ->setBody($message);
             $this->get('mailer')->send($message);
+
         }
         return $this->render('PsychoBundle:psycho:mail.html.twig');
     }
