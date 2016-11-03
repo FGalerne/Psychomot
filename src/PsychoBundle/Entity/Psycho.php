@@ -278,11 +278,6 @@ class Psycho
     /**
      * @var string
      */
-    private $contactAdr;
-
-    /**
-     * @var string
-     */
     private $contactAddress;
 
     /**
@@ -723,29 +718,7 @@ class Psycho
     {
         return $this->namePsy2;
     }
-
-    /**
-     * Set contactAdr
-     *
-     * @param string $contactAdr
-     * @return Psycho
-     */
-    public function setContactAdr($contactAdr)
-    {
-        $this->contactAdr = $contactAdr;
-
-        return $this;
-    }
-
-    /**
-     * Get contactAdr
-     *
-     * @return string 
-     */
-    public function getContactAdr()
-    {
-        return $this->contactAdr;
-    }
+    
 
     /**
      * Set contactAddress
