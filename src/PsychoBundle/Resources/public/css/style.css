@@ -141,8 +141,9 @@ body {
 
 #Psychomotricité {
     max-width: 2500px;
-    height: 700px;
+    /*height: 700px;*/
     background-color: #82BDB5;
+    position: relative;
 }
 h1 {
     text-align: center;
@@ -279,12 +280,11 @@ h3 {
 
 
 @media screen and (max-width: 1000px) {
-    body {
-        margin: 0;
-    }
     .accordion1 {
-        height: auto;
+        height: 2100px;
+        position: relative;
     }
+
     .accordion1 ul li,
     .accordion1 ul li:hover,
     .accordion1 ul:hover li,
@@ -342,6 +342,7 @@ h3 {
     }
 }
 
+
 /*--FIN PSYCHOMOTRICITE--*/
 
 
@@ -349,6 +350,7 @@ h3 {
 
 #psychomot {
     height: auto;
+    position: relative;
 }
 
 .left, .right {
@@ -787,3 +789,78 @@ footer{
 
 /*-- MAIL ENVOYE --*/
 
+.email{
+    background-color: #FFFFFF;
+    color: black;
+    width: 30%;
+    height:150px;
+    padding:50px 0px 0px 0px;
+    border:4px solid #82BDB5;
+    margin-left: 35%;
+    margin-top:50px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.retours {
+    background-color: #82BDB5;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.5em;
+    margin-left: 45%;
+}
+
+.retours:link {
+    color: #FFFFFF;
+}
+.retours:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.retours:hover {
+    color: #BCECE9;
+    text-decoration: none;
+}
+.retours:active {
+    color: #BCECE9;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 970px) {
+
+    .email{
+        width: 50%;
+        height:150px;
+        padding:50px 0px 0px 0px;
+        border:4px solid #82BDB5;
+        margin-left: 25%;
+        margin-top:50px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .retours {
+        margin-left: 35%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .email{
+        width: 90%;
+        height:150px;
+        padding:50px 0px 0px 0px;
+        border:4px solid #82BDB5;
+        margin-left: 5%;
+        margin-top:50px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .retours {
+        margin-left: 20%;
+    }
+
+}
