@@ -4,7 +4,7 @@
 }
 .navbar-default {
     background-color: #82bdb5;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 /* title */
 .navbar-default .navbar-brand {
@@ -53,8 +53,9 @@
 }
 .logo-navbar{
     padding: 0;
-    margin-top: -25px;
+    margin-top: -10px;
 }
+.tel
 /*--FIN NAVBAR--*/
 
 body {
@@ -111,6 +112,7 @@ body {
 .psyco_titre1{
     padding: 25px 25px 25px 25px;
     text-align: center;
+    margin-top: 0;
 }
 
 /*--FIN PSYCHOMOTRICITE--*/

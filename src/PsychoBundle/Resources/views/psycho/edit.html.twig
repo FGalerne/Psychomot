@@ -23,12 +23,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand"><img src="{{ asset('bundles/psycho/img/logo.png') }}" class= "" alt="Logo psychomotricienne"/> </a>
+            <a class="navbar-brand"><img src="{{ asset('bundles/psycho/img/logo.png') }}" class= "logo-navbar" alt="Logo psychomotricienne"/> </a>
 
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav ">
-                <li class="active"><a class="js-scrollTo" href="#page-home">Accueil <span class="sr-only">(current)</span></a></li>
+
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Psychomotricité<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -48,12 +48,16 @@
                 </li>
                 <li><a class="js-scrollTo" href="#page-contact">Contact</a></li>
                 <li><input type="submit" value="Mise à jour" class="MiseAJour"/></li>
-                <a class="telephone" >{{ psycho.tel }}</a>
             </ul>
-            <div>
-                {{ form_widget(form.tel, {'attr': {'class': 'form-control'}}) }}
-                {{ form_errors(form.tel) }}
-            </div>
+            <ul class="nav navbar-nav navbar-right tel">
+                <li><a>
+                    {{ form_widget(form.tel, {'attr': {'class': 'form-control'}}) }}
+                    {{ form_errors(form.tel) }}
+                </a></li>
+                <li><a><b>{{ psycho.tel }}</b></a></li>
+
+            </ul>
+
         </div>
     </nav>
 
@@ -172,13 +176,13 @@
     <!--Début Psychomotriciennes-->
 
     <div class="row">
-        <div id="psychomot">
-            <h3>{{ psycho.titlePsy }}</h3>
-            <div class="titrePsycholog">
+        <div id="psychomot" class="row">
+            <h2 class="psyco_titre1 ">{{ psycho.titlePsy }}</h2>
+            <div class="titrePsycholog ">
                 {{ form_widget(form.titlePsy, {'attr': {'class': 'form-control'}}) }}
                 {{ form_errors(form.titlePsy) }}
             </div>
-            <div class="fond">
+            <div class="fond row">
                 <div class="left col-xs-12 col-sm-6 col-md-6">
                     <div class="col-xs-12">
                         <div>
@@ -239,43 +243,53 @@
 
 
     <!--Début Intervention-->
-
-        <div id="consultation">
+    <div class="row">
+        <div id="consultation" class="col-xs-12">
             <div class="accordion">
-                <ul>
-                    <li>
-                        <div>
-                            <h2>{{ psycho.titleConsult }}</h2>
-                            {{ form_widget(form.titleConsult, {'attr': {'class': 'form-control'}}) }}
-                            {{ form_errors(form.titleConsult) }}
-                            <p>{{ psycho.txtConsult }}</p>
-                            {{ form_widget(form.txtConsult, {'attr': {'class': 'form-control'}}) }}
-                            {{ form_errors(form.txtConsult) }}
-                        </div>
-                    </li>
-                    <li id="atelier">
-                        <div>
-                            <h2>{{ psycho.titleInterv }}</h2>
+
+                <div>
+                    <h2 class="psyco_titre1">{{ psycho.titleConsult }}</h2>
+                    <div class="col-xs-offset-4 col-xs-4">
+                        {{ form_widget(form.titleConsult, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.titleConsult) }}
+                    </div>
+                    <p class="psyco_texte1 col-xs-12">>{{ psycho.txtConsult }}</p>
+                    <div class="col-xs-offset-1 col-xs-10">
+                        {{ form_widget(form.txtConsult, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.txtConsult) }}
+                    </div>
+                </div>
+
+                <div id="atelier" class="col-xs-12">
+                    <div>
+                        <h2 class="psyco_titre1">{{ psycho.titleInterv }}</h2>
+                        <div class="col-xs-offset-4 col-xs-4">
                             {{ form_widget(form.titleInterv, {'attr': {'class': 'form-control'}}) }}
                             {{ form_errors(form.titleInterv) }}
-                            <p>{{ psycho.txtInterv }}</p>
+                        </div>
+                        <p class="psyco_texte1 col-xs-12">{{ psycho.txtInterv }}</p>
+                        <div class="col-xs-offset-1 col-xs-10">
                             {{ form_widget(form.txtInterv, {'attr': {'class': 'form-control'}}) }}
                             {{ form_errors(form.txtInterv) }}
                         </div>
-                    </li>
-                    <li id="bilan">
-                       <div>
-                           <h2>{{ psycho.titleBilan }}</h2>
-                           {{ form_widget(form.titleBilan, {'attr': {'class': 'form-control'}}) }}
-                           {{ form_errors(form.titleBilan) }}
-                           <p>{{ psycho.txtBilan }}</p>
-                           {{ form_widget(form.txtBilan, {'attr': {'class': 'form-control'}}) }}
-                           {{ form_errors(form.txtBilan) }}
+                    </div>
+                <div id="bilan" class="col-xs-12">
+                    <div>
+                        <h2 class="psyco_titre1">{{ psycho.titleBilan }}</h2>
+                        <div class="col-xs-offset-4 col-xs-4">
+                            {{ form_widget(form.titleBilan, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_errors(form.titleBilan) }}
                         </div>
-                    </li>
-                </ul>
+                        <p class="psyco_texte1 col-xs-12">{{ psycho.txtBilan }}</p>
+                        <div class="col-xs-offset-1 col-xs-10">
+                            {{ form_widget(form.txtBilan, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_errors(form.txtBilan) }}
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
     <!--Fin Intervention-->
 
@@ -285,8 +299,8 @@
     <!--Début Contact-->
 
     <div class="row">
-        <div id="page-contact">
-            <div class="essai1 border col-xs-12 col-sm-5">
+        <div id="page-contact" class="col-xs-offset-3 col-xs-6">
+            <div class="essai1 border col-xs- col-sm-5">
                 <h3>Nous contacter</h3>
                 <div class="adress">
                     <p>{{ psycho.contactName }}</p>
@@ -308,8 +322,7 @@
             </div>
         </div>
     </div>
-    <br/>
-    <br/>
+
     <!--Fin Contact-->
 
 
@@ -322,17 +335,17 @@
             </li>
         </div>
 
-        <div class="col-xs-1">
-            {{ psycho.image }}
-            <input type="submit" value="Edit" />
-            {{ form_end(form) }}
-        </div>
+        {#<div class="col-xs-1">#}
 
-        <div class="col-xs-1">
+            {#<input type="submit" value="Mise a jour"  />#}
+            {{ form_end(form) }}
+        {#</div>#}
+
+        {#<div class="col-xs-1">
             {{ form_start(delete_form) }}
             <input type="submit" value="Delete">
             {{ form_end(delete_form) }}
-        </div>
+        </div>#}
     </div>
 
 
