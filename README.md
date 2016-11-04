@@ -91,4 +91,19 @@ MISE EN PLACE
 -> php app/console doctrine:schema:update --force
 -> php app/console cache:clear
 
+
+
++++++++++++++++++++++++++++
+CREER UN NOUVEL UTILISATEUR
++++++++++++++++++++++++++++
+
+Pour créer un nouvel utilisateur, taper dans le terminal :
+
+->php app/console fos:user:create adminuser --super-admin
+
+
+
+
+
+
 A Symfony project created on October 27, 2016, 1:16 pm.
