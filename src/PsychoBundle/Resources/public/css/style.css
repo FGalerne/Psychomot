@@ -278,7 +278,26 @@ h3 {
     transform: translateX(0);
     background-image: none;
 }
-
+@media screen and (max-width: 1378px) {
+    .accordion1 ul li div a img {
+        width: 400px;
+        height: 460px;
+        float: right;
+        margin-right: 5vw;
+        margin-top: -2vw;
+    }
+    .accordion1 ul li div a p {
+        top: 20px;
+        font-size: 16px;
+        width: 600px;
+        height: 500px;
+        text-align: justify;
+        text-justify: inter-word;
+        overflow: auto;
+        color: black;
+        padding-right: 5%;
+    }
+}
 
 @media screen and (max-width: 1000px) {
     .accordion1 {
