@@ -239,6 +239,7 @@ h3 {
     text-justify: inter-word;
     overflow: auto;
     color: black;
+    padding-right: 5%;
 }
 
 .accordion1 ul li div a p span {
@@ -505,15 +506,15 @@ h3 {
 }
 
 .accordion ul li:nth-child(1) {
-    background-image: url(../img/consultations.jpg);
+    background-image: url(../img/7Consultations.jpg);
 }
 
 .accordion ul li:nth-child(2) {
-    background-image: url(../img/ateliers.jpg);
+    background-image: url(../img/8Ateliers.jpg);
 }
 
 .accordion ul li:nth-child(3) {
-    background-image: url(../img/bilan.jpg);
+    background-image: url(../img/9Bilan.jpg);
 }
 
 
@@ -545,9 +546,9 @@ h3 {
         height: auto;
     }
 
-    .accordion ul li:nth-child(1) { background-image: url("../img/consultations.jpg");height: 700px; }
-    .accordion ul li:nth-child(2) { background-image: url("../img/ateliers.jpg");height: 700px; }
-    .accordion ul li:nth-child(3) { background-image: url("../img/bilan.jpg");height: 700px; }
+    .accordion ul li:nth-child(1) { background-image: url("../img/7Consultations.jpg");height: 700px; }
+    .accordion ul li:nth-child(2) { background-image: url("../img/8Ateliers.jpg");height: 700px; }
+    .accordion ul li:nth-child(3) { background-image: url("../img/9Bilan.jpg");height: 700px; }
 
     .accordion ul li:nth-child(1) { background-color:#82bdb5; height: 700px; }
     .accordion ul li:nth-child(2) { background-color:#82bdb5; height: 700px; }
