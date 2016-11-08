@@ -302,9 +302,9 @@
 
     <!--Début Contact-->
 
-    <div class="row">
-        <div id="page-contact" class="col-xs-offset-3 col-xs-6">
-            <div class="essai1 border col-xs- col-sm-5">
+
+        <div id="page-contact">
+            <div class="essai1 border">
                 <h3>Nous contacter</h3>
                 <div class="adress">
                     <p>{{ psycho.contactName }}</p>
@@ -325,15 +325,16 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="batiment">
             <img src="{{ app.request.basepath }}/uploads/{{ psycho.image6 }}"/>
+            <div class="textBatiment">
             {{form.children.file6.vars.label}}
-            {{ form_widget(form.file6) }}
+            {{ form_widget(form.file6)}}
             {{ form_errors(form.file6) }}
             {{ form_widget(form.image6) }}
             {{ form_errors(form.image6) }}
+            </div>
         </div>
-    </div>
 
     <!--Fin Contact-->
 

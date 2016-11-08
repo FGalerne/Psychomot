@@ -637,11 +637,11 @@ h3 {
 /*DEBUT CONTACT*/
 
 
-#page-contact {
+/*#page-contact {
     padding-top: 70px;
     /*height: 700px;*/
     /*background-color: #82BDB5;*/
-    margin-left: 2%;
+    /*margin-left: 2%;
 }
 
 #page-contact p, #page-contact h3 {
@@ -703,8 +703,119 @@ h3 {
         width: 90%;
         margin-left: 0%;
     }
+}*/
+
+
+
+
+
+/*DEBUT CONTACT*/
+
+#page-contact {
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
+.essai1{
+    padding-bottom: 20px;
+    margin-left: 10%;
+    width: 40%;
+}
+
+#page-contact p, #page-contact h3 {
+    text-align: center;
+}
+
+#page-contact p {
+    font-size: 16px;
+}
+
+#page-contact h3 {
+    background-color: white;
+    margin: -15px 120px 0px 120px;
+    color: #82BDB5;
+}
+
+.contact {
+    border: 5px solid #82BDB5;
+}
+
+.send {
+    margin-bottom: 10px;
+}
+
+.message{
+    text-align: center;
+}
+
+.formulaire, .adress {
+    margin-top: 40px;
+    padding-right:10px;
+    padding-left:10px;
+}
+
+.batiment{
+    margin-left: 55%;
+    margin-top: 20px;
+}
+
+.batiment img{
+    width: 60%;
+}
+
+.map{
+    margin-top: 10px;
+
+}
+
+@media screen and (max-width: 1065px) {
+    .map {
+        display: none
+    }
+    .batiment{
+        display: none;
+    }
+    #page-contact{
+        width: 150%;
+        margin-left: 10%;
+    }
+
+}
+
+
+@media screen and (max-width: 850px) {
+    .map {
+        display: none;
+    }
+
+    .batiment{
+        display: none;
+    }
+
+    #page-contact{
+        width: 165%;
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .map {
+        display: none;
+    }
+    .batiment{
+        display: none;
+    }
+
+    #page-contact{
+        width: 200%;
+        margin-left: -10%;
+    }
+
+    #page-contact h3 {
+        margin-top: 10px;
+        margin-left: 25%;
+    }
+}
 
 
 /*FIN CONTACT*/
