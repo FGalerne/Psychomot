@@ -754,13 +754,12 @@ h3 {
     padding-left:10px;
 }
 
-.batiment{
-    margin-left: 55%;
-    margin-top: 20px;
-}
+
 
 .batiment img{
-    width: 60%;
+    width: 458px;
+    margin-left: 15px;
+    margin-top: 20px;
 }
 
 .map{
@@ -769,47 +768,29 @@ h3 {
 }
 
 @media screen and (max-width: 1065px) {
-    .map {
-        display: none
-    }
-    .batiment{
-        display: none;
-    }
-    #page-contact{
-        width: 150%;
-        margin-left: 10%;
-    }
 
+    .essai1{
+        margin-left: 7%;
+    }
 }
 
 
-@media screen and (max-width: 850px) {
-    .map {
-        display: none;
-    }
-
-    .batiment{
-        display: none;
-    }
+@media screen and (max-width: 875px) {
 
     #page-contact{
-        width: 165%;
-        margin-left: 0%;
+        width: 200%;
+        margin-left: -3%;
+    }
+
+    .batiment {
+        display: none;
+    }
+    .map{
+        display: none;
     }
 }
 
 @media screen and (max-width: 605px) {
-    .map {
-        display: none;
-    }
-    .batiment{
-        display: none;
-    }
-
-    #page-contact{
-        width: 200%;
-        margin-left: -10%;
-    }
 
     #page-contact h3 {
         margin-top: 10px;
