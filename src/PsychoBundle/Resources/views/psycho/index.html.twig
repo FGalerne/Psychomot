@@ -47,7 +47,7 @@
         <div id="title">
             <hr/>
             <h1>CABINET DE PSYCHOMOTRICITE
-                <br/><span class="home-adresse">38 rue Arnold Dolmetsch - 72000 Le Mans</span>
+                <br/><span class="home-adresse">{{ psycho.contactAddress }}{#38 rue Arnold Dolmetsch - 72000 Le Mans#}</span>
             </h1>
             <hr/>
         </div>
@@ -228,6 +228,11 @@
                 </div>
             </form>
         </div>
+        {% for psycho in psychos %}
+        <div>
+            <img src="{{ app.request.basepath }}/uploads/{{ psycho.image6 }}">
+        </div>
+        {% endfor %}
 
 
         <div class="map col-xs-12 col-sm-6">
@@ -240,8 +245,6 @@
 
 <br/>
 <br/>
-{#<img src="{{ app.request.basepath }}/uploads/{{ psychomot.image }}">#}
-
 
 
 

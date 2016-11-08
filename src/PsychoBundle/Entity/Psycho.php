@@ -179,6 +179,36 @@ class Psycho
             unlink($file);
         }
     }
+    public $file6;
+
+    public function preUpload6()
+    {
+        if (null !== $this->file6) {
+            // do whatever you want to generate a unique name
+            $this->image1 = uniqid().'.'.$this->file6->guessExtension();
+        }
+    }
+
+    public function upload6()
+    {
+        if (null === $this->file6) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file6->move($this->getUploadRootDir(), $this->image6);
+
+        unset($this->file6);
+    }
+
+    public function removeUpload6()
+    {
+        if ($file = $this->getAbsolutePath()) {
+            unlink($file);
+        }
+    }
     //** CODE GENERE **/
     /**
      * @var int
@@ -1001,5 +1031,33 @@ class Psycho
     public function removeUpload()
     {
         // Add your code here
+    }
+    /**
+     * @var string
+     */
+    private $image6;
+
+
+    /**
+     * Set image6
+     *
+     * @param string $image6
+     * @return Psycho
+     */
+    public function setImage6($image6)
+    {
+        $this->image6 = $image6;
+
+        return $this;
+    }
+
+    /**
+     * Get image6
+     *
+     * @return string 
+     */
+    public function getImage6()
+    {
+        return $this->image6;
     }
 }

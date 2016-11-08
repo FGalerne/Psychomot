@@ -79,10 +79,13 @@ PsychoBundle\Entity\Psycho:
         image5:
             type: string
             length: 25
+        image6:
+            type: string
+            length: 25
 
     lifecycleCallbacks:
-      prePersist: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5 ]
-      preUpdate: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5 ]
-      postPersist: [ upload, upload1, upload2,upload3, upload4,upload5 ]
-      postUpdate: [ upload, upload1, upload2,upload3, upload4,upload5 ]
-      postRemove: [ removeUpload, removeUpload1, removeUpload2,removeUpload3, removeUpload4,removeUpload5 ]
+      prePersist: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5, preUpload6 ]
+      preUpdate: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5, preUpload6 ]
+      postPersist: [ upload, upload1, upload2,upload3, upload4, upload5, upload6 ]
+      postUpdate: [ upload, upload1, upload2,upload3, upload4,upload5, upload6 ]
+      postRemove: [ removeUpload, removeUpload1, removeUpload2,removeUpload3, removeUpload4,removeUpload5, removeUpload6 ]

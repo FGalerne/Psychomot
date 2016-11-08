@@ -325,6 +325,14 @@
                 </div>
             </div>
         </div>
+        <div>
+            <img src="{{ app.request.basepath }}/uploads/{{ psycho.image6 }}"/>
+            {{form.children.file6.vars.label}}
+            {{ form_widget(form.file6) }}
+            {{ form_errors(form.file6) }}
+            {{ form_widget(form.image6) }}
+            {{ form_errors(form.image6) }}
+        </div>
     </div>
 
     <!--Fin Contact-->

@@ -44,7 +44,9 @@ class PsychoType extends AbstractType
             ->add('namePsy2')
             ->add('contactAddress')
             ->add('contactTel')
-            ->add('contactName');
+            ->add('contactName')
+            ->add('image6')
+            ->add('file6', 'file', array('required' => false));
 
     }
     
