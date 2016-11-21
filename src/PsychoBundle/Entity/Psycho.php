@@ -216,7 +216,7 @@ class Psycho
     private $id;
 
     /**
-     * @Assert\Regex(pattern="/^(0|(\\+33)|(0033))[1-9][0-9]{8}$/")
+     * @Assert\Regex(pattern="/(\d\d ){4}\d\d/")
      */
     private $tel;
 
