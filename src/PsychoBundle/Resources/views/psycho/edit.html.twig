@@ -50,12 +50,11 @@
                 <li><input type="submit" value="Mise à jour" class="MiseAJour"/></li>
             </ul>
             <ul class="nav navbar-nav navbar-right tel">
-                <li><a>
-                    {{ form_widget(form.tel, {'attr': {'class': 'form-control'}}) }}
-                    {{ form_errors(form.tel) }}
-                </a></li>
-                <li><a><b>{{ psycho.tel }}</b></a></li>
-
+                <li><a><b>Téléphone du cabinet : {{ psycho.tel }}</b></a></li>
+                <a>
+                        {{ form_widget(form.tel, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.tel) }}
+                </a>
             </ul>
 
         </div>
