@@ -95,7 +95,7 @@ class Psycho
     {
         if (null !== $this->file3) {
             // do whatever you want to generate a unique name
-            $this->image3 = uniqid().'.'.$this->file2->guessExtension();
+            $this->image3 = uniqid().'.'.$this->file3->guessExtension();
         }
     }
 
