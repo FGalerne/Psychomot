@@ -17,6 +17,8 @@ PsychoBundle\Entity\Psycho:
             length: 255
         txtdef:
             type: text
+        txtdef1:
+            type: text
         titleWho:
             type: string
             length: 255
@@ -82,10 +84,16 @@ PsychoBundle\Entity\Psycho:
         image6:
             type: string
             length: 25
+        image7:
+            type: string
+            length: 25
+        image8:
+            type: string
+            length: 25
 
     lifecycleCallbacks:
-      prePersist: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5, preUpload6 ]
-      preUpdate: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5, preUpload6 ]
-      postPersist: [ upload, upload1, upload2,upload3, upload4, upload5, upload6 ]
-      postUpdate: [ upload, upload1, upload2,upload3, upload4,upload5, upload6 ]
-      postRemove: [ removeUpload, removeUpload1, removeUpload2,removeUpload3, removeUpload4,removeUpload5, removeUpload6 ]
+      prePersist: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5, preUpload6, preUpload7, preUpload8 ]
+      preUpdate: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5, preUpload6, preUpload7, preUpload8 ]
+      postPersist: [ upload, upload1, upload2,upload3, upload4, upload5, upload6, upload7, upload8 ]
+      postUpdate: [ upload, upload1, upload2,upload3, upload4,upload5, upload6, upload7, upload8 ]
+      postRemove: [ removeUpload, removeUpload1, removeUpload2,removeUpload3, removeUpload4,removeUpload5, removeUpload6, removeUpload7, removeUpload8 ]

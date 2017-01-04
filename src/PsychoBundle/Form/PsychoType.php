@@ -17,6 +17,7 @@ class PsychoType extends AbstractType
             ->add('tel')
             ->add('titledef')
             ->add('txtdef', 'textarea', array('attr' => array('rows' => '15')))
+            ->add('txtdef1', 'textarea', array('attr' => array('rows' => '15')))
             ->add('image1')
             ->add('file1', 'file', array('required' => false))
             ->add('titleWho')
@@ -46,7 +47,11 @@ class PsychoType extends AbstractType
             ->add('contactTel')
             ->add('contactName')
             ->add('image6')
-            ->add('file6', 'file', array('required' => false));
+            ->add('file6', 'file', array('required' => false))
+            ->add('image7')
+            ->add('file7', 'file', array('required' => false))
+            ->add('image8')
+            ->add('file8', 'file', array('required' => false));
 
     }
     

@@ -185,7 +185,7 @@ class Psycho
     {
         if (null !== $this->file6) {
             // do whatever you want to generate a unique name
-            $this->image1 = uniqid().'.'.$this->file6->guessExtension();
+            $this->image6 = uniqid().'.'.$this->file6->guessExtension();
         }
     }
 
@@ -209,6 +209,69 @@ class Psycho
             unlink($file);
         }
     }
+
+    public $file7;
+
+    public function preUpload7()
+    {
+        if (null !== $this->file7) {
+            // do whatever you want to generate a unique name
+            $this->image7 = uniqid().'.'.$this->file7->guessExtension();
+        }
+    }
+
+    public function upload7()
+    {
+        if (null === $this->file7) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file7->move($this->getUploadRootDir(), $this->image7);
+
+        unset($this->file7);
+    }
+
+    public function removeUpload7()
+    {
+        if ($file = $this->getAbsolutePath()) {
+            unlink($file);
+        }
+    }
+
+    public $file8;
+
+    public function preUpload8()
+    {
+        if (null !== $this->file8) {
+            // do whatever you want to generate a unique name
+            $this->image8 = uniqid().'.'.$this->file8->guessExtension();
+        }
+    }
+
+    public function upload8()
+    {
+        if (null === $this->file8) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file8->move($this->getUploadRootDir(), $this->image8);
+
+        unset($this->file8);
+    }
+
+    public function removeUpload8()
+    {
+        if ($file = $this->getAbsolutePath()) {
+            unlink($file);
+        }
+    }
+
     //** CODE GENERE **/
     /**
      * @var int
@@ -894,6 +957,22 @@ class Psycho
      */
     private $image5;
 
+    /**
+     * @var string
+     */
+    private $image6;
+
+    /**
+     * @var string
+     */
+    private $image7;
+
+    /**
+     * @var string
+     */
+    private $image8;
+
+
 
     /**
      * Set image1
@@ -1009,6 +1088,75 @@ class Psycho
     {
         return $this->image5;
     }
+
+    /**
+     * Set image6
+     *
+     * @param string $image6
+     * @return Psycho
+     */
+    public function setImage6($image6)
+    {
+        $this->image6 = $image6;
+
+        return $this;
+    }
+
+    /**
+     * Get image6
+     *
+     * @return string 
+     */
+    public function getImage6()
+    {
+        return $this->image6;
+    }
+
+    /**
+     * Set image7
+     *
+     * @param string $image7
+     * @return Psycho
+     */
+    public function setImage7($image7)
+    {
+        $this->image7 = $image7;
+
+        return $this;
+    }
+
+    /**
+     * Get image7
+     *
+     * @return string
+     */
+    public function getImage7()
+    {
+        return $this->image7;
+    }
+    /**
+     * Set image8
+     *
+     * @param string $image8
+     * @return Psycho
+     */
+    public function setImage8($image8)
+    {
+        $this->image8 = $image8;
+
+        return $this;
+    }
+
+    /**
+     * Get image8
+     *
+     * @return string
+     */
+    public function getImage8()
+    {
+        return $this->image8;
+    }
+
     /**
      * @ORM\PrePersist
      */
@@ -1035,29 +1183,29 @@ class Psycho
     /**
      * @var string
      */
-    private $image6;
+    private $txtdef1;
 
 
     /**
-     * Set image6
+     * Set txtdef1
      *
-     * @param string $image6
+     * @param string $txtdef1
      * @return Psycho
      */
-    public function setImage6($image6)
+    public function setTxtdef1($txtdef1)
     {
-        $this->image6 = $image6;
+        $this->txtdef1 = $txtdef1;
 
         return $this;
     }
 
     /**
-     * Get image6
+     * Get txtdef1
      *
      * @return string 
      */
-    public function getImage6()
+    public function getTxtdef1()
     {
-        return $this->image6;
+        return $this->txtdef1;
     }
 }

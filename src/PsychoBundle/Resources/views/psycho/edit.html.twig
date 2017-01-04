@@ -74,16 +74,50 @@
                         <h2 class="psyco_titre1">{{ psycho.titledef }}</h2>
                         <div class="col-xs-offset-4 col-xs-4">
                             <p class=>{{ form_widget(form.titledef, {'attr': {'class': 'form-control'}}) }}
-                            {{ form_errors(form.titledef) }}</p>
+                                {{ form_errors(form.titledef) }}</p>
                         </div>
+                        <div class="form-group row photo">
+                            <label for="example-text-input" class="form-label col-xs-4">Nom de la photo :</label>
 
-                        <p class="psyco_texte1 col-xs-12">{{ psycho.txtdef }} </p>
-
+                            <div class="col-xs-6">
+                            {{ form_widget(form.file7) }}
+                            {{ form_errors(form.file7) }}
+                        </div>
+                        <div class="col-xs-6">
+                            {{ form_widget(form.image7, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_errors(form.image7) }}
+                        </div>
+                            </div>
                         <div class="col-xs-12">
+                            <p class="psyco_texte1 col-xs-12">{{ psycho.txtdef }} </p>
                             {{ form_widget(form.txtdef, {'attr': {'class': 'form-control'}}) }}
                             {{ form_errors(form.txtdef) }}
                         </div>
+
+                        <div class="form-group row photo">
+                            <label for="example-text-input" class="form-label col-xs-4">Nom de la photo :</label>
+                            <div class="col-xs-6">
+                                {{ form_widget(form.file8) }}
+                                {{ form_errors(form.file8) }}
+                            </div>
+                            <div class="col-xs-6">
+                            {{ form_widget(form.image8, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_errors(form.image8) }}
+                        </div>
+
+                            </div>
+                        <div class="col-xs-12">
+                            <p class="psyco_texte1 col-xs-12">{{ psycho.txtdef1 }} </p>
+                            {{ form_widget(form.txtdef1, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_errors(form.txtdef1) }}
+                        </div>
                     </div>
+
+
+                </div>
+
+
+
                     <div class="row">
                         <img src="{{ app.request.basepath }}/uploads/{{ psycho.image1 }}" class="img col-xs-6">
                         <div class="col-xs-6">
@@ -93,12 +127,16 @@
                                     {{ form_widget(form.image1, {'attr': {'class': 'form-control'}}) }}
                                     {{ form_errors(form.image1) }}
                                 </div>
+                                <div class="col-xs-6">
+                                    {{ form_widget(form.file1) }}
+                                    {{ form_errors(form.file1) }}
+                                </div>
+
+
                             </div>
                         </div>
-                        <div class="col-xs-6">
-                            {{ form_widget(form.file1) }}
-                            {{ form_errors(form.file1) }}
-                        </div>
+
+
                     </div>
                 </div>
 
@@ -127,7 +165,6 @@
                                 {{ form_errors(form.image2) }}
                             </div>
                         </div>
-
 
                     </div>
                     <div class="col-xs-6">
@@ -342,19 +379,8 @@
 
     <div class="row">
 
-
-        {#<div class="col-xs-1">#}
-
-            {#<input type="submit" value="Mise a jour"  />#}
             {{ form_end(form) }}
-        {#</div>#}
 
-        {#<div class="col-xs-1">
-            {{ form_start(delete_form) }}
-            <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </div>#}
-    </div>
 
 
 
