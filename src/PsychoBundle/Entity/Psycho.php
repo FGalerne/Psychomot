@@ -272,6 +272,38 @@ class Psycho
         }
     }
 
+
+
+    public $file9;
+
+    public function preUpload9()
+    {
+        if (null !== $this->file9) {
+            // do whatever you want to generate a unique name
+            $this->image9 = uniqid().'.'.$this->file9->guessExtension();
+        }
+    }
+
+    public function upload9()
+    {
+        if (null === $this->file9) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file9->move($this->getUploadRootDir(), $this->image9);
+
+        unset($this->file9);
+    }
+
+    public function removeUpload9()
+    {
+        if ($file = $this->getAbsolutePath()) {
+            unlink($file);
+        }
+    }
     //** CODE GENERE **/
     /**
      * @var int
@@ -972,6 +1004,10 @@ class Psycho
      */
     private $image8;
 
+    /**
+     * @var string
+     */
+    private $image9;
 
 
     /**
@@ -1158,6 +1194,29 @@ class Psycho
     }
 
     /**
+     * Set image9
+     *
+     * @param string $image9
+     * @return Psycho
+     */
+    public function setImage9($image9)
+    {
+        $this->image9 = $image9;
+
+        return $this;
+    }
+
+    /**
+     * Get image9
+     *
+     * @return string
+     */
+    public function getImage9()
+    {
+        return $this->image9;
+    }
+
+    /**
      * @ORM\PrePersist
      */
     public function preUpload()
@@ -1207,5 +1266,33 @@ class Psycho
     public function getTxtdef1()
     {
         return $this->txtdef1;
+    }
+    /**
+     * @var string
+     */
+    private $txtWhy2;
+
+
+    /**
+     * Set txtWhy2
+     *
+     * @param string $txtWhy2
+     * @return Psycho
+     */
+    public function setTxtWhy2($txtWhy2)
+    {
+        $this->txtWhy2 = $txtWhy2;
+
+        return $this;
+    }
+
+    /**
+     * Get txtWhy2
+     *
+     * @return string 
+     */
+    public function getTxtWhy2()
+    {
+        return $this->txtWhy2;
     }
 }

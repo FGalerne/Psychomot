@@ -188,6 +188,22 @@
                         {{ form_widget(form.txtWhy, {'attr': {'class': 'form-control'}}) }}
                         {{ form_errors(form.txtWhy) }}
                     </div>
+                    <div class="form-group row photo">
+                        <label for="example-text-input" class="form-label col-xs-4">Nom de la photo :</label>
+                        <div class="col-xs-6">
+                            {{ form_widget(form.file9) }}
+                            {{ form_errors(form.file9) }}
+                        </div>
+                        <div class="col-xs-6">
+                            {{ form_widget(form.image9, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_errors(form.image9) }}
+                        </div>
+
+                    <p class="psyco_texte1 col-xs-12">{{ psycho.txtWhy2 }}</p>
+                    <div class="col-xs-12">
+                        {{ form_widget(form.txtWhy2, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.txtWhy2) }}
+                    </div>
                 </div>
                 <div class="row">
                     <img src="{{ app.request.basepath }}/uploads/{{ psycho.image1 }}" class="img col-xs-6">

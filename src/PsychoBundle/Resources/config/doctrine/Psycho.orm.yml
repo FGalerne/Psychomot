@@ -29,6 +29,8 @@ PsychoBundle\Entity\Psycho:
             length: 255
         txtWhy:
             type: text
+        txtWhy2:
+            type: text
         titlePsy:
             type: string
             length: 255
@@ -90,10 +92,13 @@ PsychoBundle\Entity\Psycho:
         image8:
             type: string
             length: 25
+        image9:
+            type: string
+            length: 25
 
     lifecycleCallbacks:
-      prePersist: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5, preUpload6, preUpload7, preUpload8 ]
-      preUpdate: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5, preUpload6, preUpload7, preUpload8 ]
-      postPersist: [ upload, upload1, upload2,upload3, upload4, upload5, upload6, upload7, upload8 ]
-      postUpdate: [ upload, upload1, upload2,upload3, upload4,upload5, upload6, upload7, upload8 ]
-      postRemove: [ removeUpload, removeUpload1, removeUpload2,removeUpload3, removeUpload4,removeUpload5, removeUpload6, removeUpload7, removeUpload8 ]
+      prePersist: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5, preUpload6, preUpload7, preUpload8, preUpload9 ]
+      preUpdate: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5, preUpload6, preUpload7, preUpload8, preUpload9 ]
+      postPersist: [ upload, upload1, upload2,upload3, upload4, upload5, upload6, upload7, upload8, upload9 ]
+      postUpdate: [ upload, upload1, upload2,upload3, upload4,upload5, upload6, upload7, upload8, upload9 ]
+      postRemove: [ removeUpload, removeUpload1, removeUpload2,removeUpload3, removeUpload4,removeUpload5, removeUpload6, removeUpload7, removeUpload8, removeUpload9 ]

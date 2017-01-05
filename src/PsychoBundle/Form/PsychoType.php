@@ -26,6 +26,7 @@ class PsychoType extends AbstractType
             ->add('file2', 'file', array('required' => false))
             ->add('titleWhy')
             ->add('txtWhy',  'textarea', array('attr' => array('rows' => '15')))
+            ->add('txtWhy2',  'textarea', array('attr' => array('rows' => '15')))
             ->add('image3')
             ->add('file3', 'file', array('required' => false))
             ->add('titlePsy')
@@ -51,7 +52,9 @@ class PsychoType extends AbstractType
             ->add('image7')
             ->add('file7', 'file', array('required' => false))
             ->add('image8')
-            ->add('file8', 'file', array('required' => false));
+            ->add('file8', 'file', array('required' => false))
+            ->add('image9')
+            ->add('file9', 'file', array('required' => false));
 
     }
     
